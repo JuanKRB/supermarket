@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./css/Inicio.css">
-        <title>JSP Page</title>
+        <title>JSP Pageeee</title>
     </head>
     <body>
    <header>
