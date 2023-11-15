@@ -1,0 +1,53 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333; /* Color de fondo del encabezado */
+            color: white; /* Color del texto del encabezado */
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #categorias {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .icono {
+            margin-top: 20px;
+            margin-right: 20px;
+            float: right; /* Para alinear a la derecha */
+        }
+
+        .sesion {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .enlaces-sesion {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .imagen-con-descripcion {
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd; /* Borde para mejorar visualización */
+            padding: 5px; /* Relleno alrededor de la imagen */
+        }
