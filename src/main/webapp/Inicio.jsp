@@ -14,7 +14,7 @@
     </head>
     <body>
    <header>
-        <h1>Mi Tienda en Línea</h1>
+        <h1>Tienda</h1>
     </header>
 
     <form action="" method="get">
@@ -23,8 +23,8 @@
         <button type="submit">Buscar</button>
 
         <div class="enlaces-sesion">
-            <a href="#" class="sesion">Iniciar Sesión</a>
-            <a href="#" class="sesion">Registrarse</a>
+            <a href="IniciarSesion.jsp" class="sesion">Iniciar Sesión</a>
+            <a href="Registrarse.jsp" class="sesion">Registrarse</a>
         </div>
 
         <img id="cart-icon" width="35px" height="35px" class="icono" src="https://us.123rf.com/450wm/vectoraa/vectoraa1609/vectoraa160900985/62392824-icono-de-carrito-de-compras-icono-de-vector-de-mejor-dise%C3%B1o-plano.jpg">
