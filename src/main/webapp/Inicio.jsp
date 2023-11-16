@@ -15,10 +15,10 @@
     <body>
         <header>
 
-            <a href="Inicio.jsp" class="logo"><img src="./css/logo.png" alt="alt" class="imagenLogo"/></a>
+            <a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>
 
             <div class="carrito">
-                <a href="Inicio.jsp" class="imagenCarritoA"><img src="./css/carrito.png" alt="alt" class="imagenCarrito"/></a>
+                <a href="Inicio.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
             </div>
          
             <nav>
@@ -32,10 +32,10 @@
         </header>
         
         <div class="Carnes">
-            <img src="./css/Alimentos3.png" alt="alt" class="alimentos"/>
+            <img src="./img/Alimentos3.png" alt="alt" class="alimentos"/>
         </div>
 
-
+       
 
 
 
