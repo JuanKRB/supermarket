@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/Inicio2.css">
+        <link rel="stylesheet" href="./css/inicio3.css">
         <title>JSP Pageeee</title>
     </head>
     <body>
@@ -17,26 +17,36 @@
 
             <a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>
 
+            <nav>
+                <a href="Inicio.jsp" class="inicio">Inicio</a>
+                <a href="productos.jsp">Productos</a>
+                <a href="IniciarSesion.jsp" class="inicisesion">Iniciar Sesion</a>     
+            </nav>
+
             <div class="carrito">
                 <a href="Inicio.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
             </div>
-         
-            <nav>
 
-               
-                <a href="Inicio.jsp">Inicio</a>
-                <a href="tienda.jsp">Tienda</a>
-                <a href="IniciarSesion.jsp">Iniciar sesion</a>     
-            </nav>
+            <div class="lupa">
+                <a href="Inicio.jsp" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
+            </div>
 
         </header>
-        
-        <div class="Carnes">
-            <img src="./img/Alimentos3.png" alt="alt" class="alimentos"/>
+
+        <div>
+
+            <div class="Carnes">
+                <a href="alimentos.jsp"><img src="./img/Alimentos4.png" alt="alt" class="alimentos"/></a>
+            </div>
+
+            <div class="Bebidas">
+                <a href="bebidas.jsp"><img src="./img/bebidas.png" alt="alt" class="alimentos"/> </a>
+            </div>
+
+            <div class="Electrodomesticos">
+                <a href="electrodomesticos.jsp"><img src="./img/electrodomesticos.png" alt="alt" class="alimentos"/> </a>
+            </div>
         </div>
-
-       
-
 
 
         <h1>Categorías</h1>
