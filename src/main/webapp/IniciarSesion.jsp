@@ -9,7 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <title>Supermercado</title>
     </head>
     <body>
          <title>Login y Register</title>
@@ -42,18 +44,18 @@
                     <!--para el login-->
                     <form action="" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Correo Electronico" required>
+                        <input type="password" placeholder="Contraseña" required>
                         <button>Entrar</button>
                     </form>
 
                     <!--para registrarse-->
                     <form action="" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="text" placeholder="Usuario">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="text" placeholder="Correo Electronico" required>
+                        <input type="text" placeholder="Usuario" required>
+                        <input type="password" placeholder="Contraseña" required>
                         <button>Regístrarse</button>
                     </form>
                 </div>
