@@ -296,3 +296,76 @@ nav {
     cursor: pointer;
 }
 
+
+
+@media (max-width: 1400px) {
+    
+    nav{
+
+        margin-left: 50%;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    nav{
+
+        margin-left: 50%;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    nav{
+
+        margin-left: 40%;
+    }
+
+}
+
+@media (max-width: 890px) {
+
+    nav{
+
+        margin-left: 30%;
+    }
+
+}
+
+
+@media (max-width: 740px) {
+
+    nav{
+
+        margin-left: 15%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    nav{
+        margin-left: 8%;
+    }
+
+
+}
+
+@media (max-width: 580px) {
+
+    nav{
+        margin-left: 8%;
+    }
+
+    .a-nav a {
+        font-size: 16px;
+        margin-left: 6px;
+
+    }
+
+}
+
+

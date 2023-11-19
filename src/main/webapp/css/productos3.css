@@ -1,0 +1,315 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #ECF0F1;
+    color: blue;
+}
+
+.logo{
+
+    width: 40px;
+    border-color: red;
+    border: none;
+    transition: transform 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.imagenLogo{
+    border: none;
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    height: 55px;
+    width: 360px;
+    border-radius: 35px;
+    background-color: blue;
+    margin-left: 64%;
+    background-color: #FDFEFE;
+
+}
+
+.a-nav{
+    margin-top: 16px;
+
+
+}
+
+.a-nav a {
+
+    border-color: red;
+    text-decoration: none;
+
+    font-size: 20px;
+    color: black;
+    margin-left: 16px;
+}
+
+.carrito {
+    margin-top: 10px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 55px;
+    background-color: #FDFEFE;
+    padding: 0px;
+    border-radius: 35px;
+}
+
+.imagenCarrito {
+    margin: 0 auto;
+    width: 30px;
+    border: none;
+    margin-left: 15px;
+}
+
+.lupa {
+    margin-top: 10px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 55px;
+    background-color: #FDFEFE;
+    padding: 0px;
+    border-radius: 35px;
+}
+
+.lupa img {
+    margin: 0 auto;
+
+    border: none;
+    width: 30px;
+    border: none;
+    margin-left: 13px;
+
+}
+
+
+
+.productoDiv{
+
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 220px;
+    height: 390px;
+    border-radius: 12px;
+
+    background-color: #FDFEFE;
+
+
+
+}
+
+
+.productoDiv h4{
+
+
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.disponibilidad{
+    height: 20px;
+    display: flex;
+    margin-bottom: 4px;
+    margin-left: 2px;
+}
+
+.disponibilidad h4{
+    font-size: 13px;
+}
+
+.chek{
+    display: inline-block;
+
+    margin-right: 3px;
+    margin-left: 31%;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+}
+
+.img-producto{
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 190px;
+    height: 190px;
+    margin-left: 17px;
+
+}
+
+.informacion{
+
+    background-color: #F1F1F1;
+    width: 180px;
+    margin-left: 18px;
+    border-radius: 12px;
+    padding: 2px;
+    padding-top: 9px;
+
+}
+
+.precio{
+    padding: 40px;
+    margin-top: 45px;
+    font-size: 18px;
+}
+
+.nombre{
+
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+
+.boton-agregar{
+    margin-top: 14px;
+    margin-left: 29%;
+    color: white;
+    background-color: green;
+    border: none;
+    height: 32px;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 7px;
+
+}
+
+@media (max-width: 1400px) {
+
+    nav{
+
+        margin-left: 50%;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    nav{
+
+        margin-left: 50%;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    nav{
+
+        margin-left: 40%;
+    }
+
+}
+
+@media (max-width: 890px) {
+
+    nav{
+
+        margin-left: 30%;
+    }
+
+}
+
+
+@media (max-width: 740px) {
+
+    nav{
+
+        margin-left: 15%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    nav{
+        margin-left: 8%;
+    }
+
+
+}
+
+@media (max-width: 580px) {
+
+    nav{
+        margin-left: 8%;
+    }
+
+    .a-nav a {
+        font-size: 16px;
+        margin-left: 6px;
+
+    }
+
+    .productoDiv{
+
+        margin-left: 19px;
+        width: 210px;
+
+    }
+
+    .informacion{
+
+        width: 170px;
+        margin-left: 16px;
+
+    }
+
+}
+
+.cambioPaginas{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+   
+}
+
+.cambioPaginas a{
+    text-align: center;
+    margin-top: 20px;
+    width: 40px;;
+    height: 40px;
+    padding: 5px;
+    color: black;
+    background-color: #FDFEFE;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 18px;
+}
