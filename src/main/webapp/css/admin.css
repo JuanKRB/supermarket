@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+
+}
+
+main{
+    
+    width: 95%;
+    height: 630px;
+    margin-top: 50px;
+    margin-left: 2.6%;
+    background-color: #FDFEFE;
+    border-radius: 12px;
+}
+
+
+main h2{
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-left: 40%;
+
+}
+

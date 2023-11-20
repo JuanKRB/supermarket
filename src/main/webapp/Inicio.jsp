@@ -9,13 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./css/header3.css">
+        <link rel="stylesheet" href="./css/inicio-header2.css">
         <link rel="stylesheet" href="./css/inicio4.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
         <title>Supermercado</title>
     </head>
     <body>
-        <header>
+       <header>
 
             <a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>
 
@@ -34,6 +36,10 @@
 
             <div class="lupa">
                 <a href="Inicio.jsp" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
+            </div>
+            
+            <div class="lupa">
+                <a href="IniciarSesion.jsp" class="lupaA"><img src="./img/perfil.png" alt="alt" class=""/></a>
             </div>
 
         </header>

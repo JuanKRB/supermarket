@@ -1,0 +1,33 @@
+
+
+
+.imagenCarrito {
+
+    margin-left: 8px;
+}
+
+
+.lupa img {
+
+    margin-left: 13px;
+
+}
+
+@media (max-width: 500px) {
+
+    nav{
+
+        margin-left: 5%;
+        
+    }
+    
+    .imagenCarrito {
+        width: 25px;
+        margin-left: 1px;
+    }
+    
+    .lupa img {
+
+        margin-left: 6px;
+
+    }

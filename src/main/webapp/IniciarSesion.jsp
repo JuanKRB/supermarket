@@ -42,20 +42,20 @@
              
                 <div class="contenedor__login-register">
                     <!--para el login-->
-                    <form action="" class="formulario__login">
+                    <form action="LoginServlet" method="POST" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico" required>
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="text" placeholder="Correo Electronico" name="correoLogin" required>
+                        <input type="password" placeholder="Contraseña" name="contraLogin" required>
                         <button>Entrar</button>
                     </form>
 
                     <!--para registrarse-->
-                    <form action="" class="formulario__register">
+                    <form action="LoginServlet" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="text" placeholder="Correo Electronico" required>
-                        <input type="text" placeholder="Usuario" required>
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="text" placeholder="Nombre completo" name="nombreRegistarse" required>
+                        <input type="text" placeholder="Correo Electronico" name="correoRegistarse" required>
+                        <input type="text" placeholder="Usuario" name="usuarioRegistarse" equired>
+                        <input type="password" placeholder="Contraseña" name="contraRegistarse" required>
                         <button>Regístrarse</button>
                     </form>
                 </div>
