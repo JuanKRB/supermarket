@@ -1,0 +1,162 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+
+
+}
+
+main{
+    display: flex;
+}
+
+.informacion-usuario{
+    
+    width: 440px;
+    height: 540px;
+    margin-top: 90px;
+    /*margin-left: 27px;*/
+    
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario {
+    
+    width: 440px;
+    height: 540px;
+    margin-top: 90px;
+    /*margin-left: 27px;*/
+    
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario img{
+    
+    width: 240px;
+    height: 240px;
+    margin-left: 109px;
+    margin-top: 25px;
+
+}
+
+.informacion-usuario h4 {
+
+   margin-left: 175px;
+   font-size: 26px;
+
+}
+
+.extras{
+    
+    display: block;
+}
+
+.configuracionProductos{
+   display: block;
+    
+    width: 440px;
+    height: 150px;
+    margin-top: 90px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    display: inline-block;
+    color: black;
+
+}
+
+.h4{
+    display: inline-block;
+
+    width: 360px;
+    height: 40px;
+    top: 10px;
+    margin-bottom: 60px;
+}
+
+.configuracionProductos img{ 
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 17px;
+    margin-right: 4px;
+    
+}
+
+.configuracionProductos h4{ 
+
+    display: inline-block;
+    font-size: 29px;
+
+}
+
+.configuracionUsuarios{
+ 
+    width: 440px;
+    height: 150px;
+    margin-top: 46px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    color: black;
+
+    
+}
+
+.configuracionUsuarios img{ 
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 4px;
+    
+}
+
+.configuracionUsuarios h4{ 
+
+    display: inline-block;
+    font-size: 29px;
+    border: none;
+
+}
+
+.configuracionCuenta{
+
+    width: 440px;
+    height: 150px;
+    margin-top: 46px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    color: black;
+
+}
+
+
+.configuracionCuenta img{ 
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 4px;
+    
+}
+
+.configuracionCuenta h4{ 
+
+    display: inline-block;
+    font-size: 29px;
+
+}

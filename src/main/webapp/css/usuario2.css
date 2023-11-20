@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+
+
+}
+
+main{
+    display: flex;
+}
+
+.informacion-usuario{
+    
+    width: 440px;
+    height: 540px;
+    margin-top: 90px;
+    /*margin-left: 27px;*/
+    
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario {
+    
+    width: 440px;
+    height: 540px;
+    margin-top: 90px;
+    /*margin-left: 27px;*/
+    
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario img{
+    
+    width: 240px;
+    height: 240px;
+    margin-left: 102px;
+    margin-top: 25px;
+
+}
+
+.extras{
+    
+    display: block;
+}
+
+.img-info{
+    display: flex;
+    height: 70px;
+}
+
+.tarjetas{
+   display: inline-block;
+    
+    width: 440px;
+    height: 110px;
+    margin-top: 90px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.tarjetas a{
+  font-size: 14px;
+  color: black;
+  margin-left: 317px;
+  text-decoration: none;
+}
+
+.img-tarjeta{
+    
+    display: block;
+    margin-left: 20px;
+}
+
+.infoTarjeta{
+    display: block;
+    margin-left: 25px;
+
+    width: 300px;
+}
+.div1{
+    display: inline-block;
+
+}
+.div1 h4{
+    margin-left: 24px;
+    height: 3px;
+}
+
+.div2{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    display: inline-block;
+    
+}
+
+.div2 h4{
+    margin-left: 24px;
+    height: 3px;
+}
+
+.infoTarjeta h4{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.tarjetas img{
+  
+   width: 80px;
+   height: 80px;
+}
+
+
+.facturas{
+ 
+    width: 440px;
+    height: 110px;
+    margin-top: 35px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.direcciones{
+
+    width: 440px;
+    height: 110px;
+    margin-top: 34px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.configuracionCuenta{
+    
+    width: 440px;
+    height: 110px;
+    margin-top: 34px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
