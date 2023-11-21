@@ -1,4 +1,5 @@
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -81,9 +82,10 @@ nav {
 
 .imagenCarrito {
     margin: 0 auto;
-    width: 30px;
+    width: 40px;
     border: none;
     margin-left: 12px;
+
 }
 
 .lupa {
@@ -102,9 +104,10 @@ nav {
     margin: 0 auto;
 
     border: none;
-    width: 30px;
+    width: 40px;
     border: none;
-    margin-left: 13px;
+    margin-left: 8px;
+
 
 }
 
@@ -308,14 +311,16 @@ nav {
     }
 
     .imagenCarrito {
-        width: 20px;
-        margin-left: 9px;
+        width: 30px;
+        margin-left: 5px;
     }
 
     .lupa img {
-        width: 20px;
-        margin-left: 9px;
+        width: 30px;
+        margin-left: 5px;
 
     }
 
 }
+
+

@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./css/admin2.css">
+        <link rel="stylesheet" href="./css/transicion.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
         <title>Supermercado</title>

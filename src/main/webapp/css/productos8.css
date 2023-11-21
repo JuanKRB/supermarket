@@ -1,5 +1,6 @@
 
 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -75,11 +76,18 @@ body {
 
     background-color: #F1F1F1;
     width: 180px;
+    height: 70px;
+        
+        
     margin-left: 18px;
     border-radius: 12px;
     padding: 2px;
     padding-top: 9px;
 
+}
+.informacion p{
+
+   margin-top: 8px;
 }
 
 .precio{
