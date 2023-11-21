@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="./css/transicion.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
-        <title>Supermercado3</title>
+        <title>Supermercado4</title>
     </head>
     <body>
 
