@@ -5,7 +5,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/header5.css">    
-        <link rel="stylesheet" href="./css/productos8.css">
+        <link rel="stylesheet" href="./css/producto9.css">
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/productos-header.css">
         <link rel="stylesheet" href="./css/transicion.css">
@@ -91,7 +91,7 @@
                 </div>
             </main>
             <!--<a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>-->
-            
+
 
             <nav>
                 <div class="a-nav">
@@ -567,13 +567,15 @@
         </div>
 
         <div class="cambioPaginas">
-            <a href=""><<</a>
-            <a href="productos.jsp">1</a>
-            <a href="productos2.jsp">2</a>
-            <a href="productos_3.jsp">3</a>
-            <a href="productos_4.jsp">4</a>
-            <a href="">>></a>
-        </div>
+    <a href="" disabled><<</a>
+    <a href="productos.jsp" class="active">1</a>
+    <a href="productos2.jsp">2</a>
+    <a href="productos_3.jsp">3</a>
+    <a href="productos_4.jsp">4</a>
+    <a href="productos_5.jsp">5</a>
+    <a href="productos_6.jsp">6</a>
+    <a href="" disabled>>></a>
+</div>
 
 
     </body>

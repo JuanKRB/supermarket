@@ -5,7 +5,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/header5.css">    
-        <link rel="stylesheet" href="./css/productos8.css">
+        <link rel="stylesheet" href="./css/producto9.css">
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/productos-header.css">
         <link rel="stylesheet" href="./css/transicion.css">
@@ -91,7 +91,7 @@
                 </div>
             </main>
             <!--<a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>-->
-            
+
 
             <nav>
                 <div class="a-nav">
@@ -121,7 +121,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/ventilador.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/limin.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -169,7 +169,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/pnatalla plana.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/ceviche.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -219,7 +219,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/licuadora.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/uvas.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -545,7 +545,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/empanada.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/papaya.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -572,6 +572,9 @@
             <a href="productos2.jsp">2</a>
             <a href="productos_3.jsp">3</a>
             <a href="productos_4.jsp">4</a>
+            <a href="productos_5.jsp">5</a>
+            <a href="productos_6.jsp">6</a>
+
             <a href="">>></a>
         </div>
 

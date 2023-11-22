@@ -122,53 +122,53 @@
         </header>
 
         <div class="principal">
-            <img src="img/ete sec.webp" alt=""/>
+            <img src="img/principal.jpg" alt=""/>
     
         </div>
 
         <div class="categorias-principal">
 
             <div class="categorias-1">
-                <a href="url">
+                <a href="Alimentos.jsp">
                     <div class="categoria2">
                         <img src="img-categorias/alimentos.svg" alt="Descripción del SVG">
                         <hr>
                         <h2 id="alimentos">Alimentos</h2>
                     </div>
                 </a>
-                <a href="url">
+                <a href="Carnes.jsp">
                     <div class="categoria2">
                         <img src="img-categorias/carnes.svg" alt="Descripción del SVG">
                         <hr>
                         <h2 id="carnes">Carnes</h2>
                     </div>
                 </a>
-                <a href="url">
+                <a href="Frutas.jsp">
                 <div class="categoria2">
                     <img src="img-categorias/frutas.svg" alt="Descripción del SVG">
                     <hr>
                     <h2 id="frutas">Frutas</h2>
                 </div>
                 </a>    
-                <a href="url">
+                <a href="Electrodomesticos.jsp">
                 <div class="categoria2">
                     <img src="img-categorias/electronica.svg" alt="Descripción del SVG">
                     <hr>
                     <h2 id="electro-h2">Electrónica</h2>
                 </div> 
                 </a>    
-                <a href="url">
+                <a href="Limpieza.jsp">
                 <div class="categoria2">
                     <img src="img-categorias/limpieza.svg" alt="Descripción del SVG">
                     <hr>
                     <h2>Limpieza</h2>
                 </div>  
                 </a>    
-                <a href="url">
+                <a href="Bebidas.jsp">
                 <div class="categoria2">
-                    <img src="img-categorias/panaderia.svg" alt="Descripción del SVG">
+                    <img src="img-categorias/Bebida.svg" alt="Descripción del SVG">
                     <hr>
-                    <h2>Panaderia</h2>
+                    <h2>Bebidas</h2>
                 </div>
                 </a>
 

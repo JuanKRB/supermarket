@@ -5,7 +5,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/header5.css">    
-        <link rel="stylesheet" href="./css/productos8.css">
+          <link rel="stylesheet" href="./css/producto9.css">
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/productos-header.css">
         <link rel="stylesheet" href="./css/transicion.css">
@@ -91,7 +91,7 @@
                 </div>
             </main>
             <!--<a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>-->
-            
+
 
             <nav>
                 <div class="a-nav">
@@ -369,7 +369,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/enchilada de paap.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/mandarina.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -420,7 +420,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/flauta fresa.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/lavadora.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -545,7 +545,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/helado deleite.webp" alt="alt" class="img-producto"/>
+                <img src="./img-productos/tamarindo.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -572,6 +572,9 @@
             <a href="productos2.jsp">2</a>
             <a href="productos_3.jsp">3</a>
             <a href="productos_4.jsp">4</a>
+            <a href="productos_5.jsp">5</a>
+            <a href="productos_6.jsp">6</a>
+
             <a href="">>></a>
         </div>
 
