@@ -25,7 +25,7 @@
 <body>
 
         <main>
-
+            <a href="Inicio.jsp">--Atras--</a><br>
             <div class="contenedor__todo">
                 <div class="caja__trasera">
                     <div class="caja__trasera-login">

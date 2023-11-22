@@ -121,7 +121,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/jugoNaranjaDosPinos.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/redbull.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -145,7 +145,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/cocaCola-500ml.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/rodillo quitapelusa.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -169,7 +169,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/pepsiEnLata.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/adan y eva.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -194,7 +194,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/lecheDosPinos.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/japon de barra.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -219,7 +219,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/bananos.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/nintendo.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -244,7 +244,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/atun.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/fresca.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -269,7 +269,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/heladoDosPinos.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/ps5.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -293,7 +293,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/muslosDePollo.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/mayonesa.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -318,7 +318,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/quesoDosPinos.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/guayabitas.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -343,7 +343,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/samsungS23Ultra.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/escoba.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -369,7 +369,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/chokis.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/brownie.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -395,7 +395,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/aceite.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/palita.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -420,7 +420,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/panBlancoBimbo.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/tres leche.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -445,7 +445,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/salsaNaturas.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/alfombrilla.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -470,7 +470,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/salsaTomateHeinz.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/microfono.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -495,7 +495,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/sal.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/audifonos.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -520,7 +520,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/salsaLizano.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/sandia.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
@@ -545,7 +545,7 @@
 
             <a href="informacionProducto.jsp">
 
-                <img src="./img-productos/cafeSircof.png" alt="alt" class="img-producto"/>
+                <img src="./img-productos/cas.webp" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>

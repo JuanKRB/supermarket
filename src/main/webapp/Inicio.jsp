@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="./css/transicion.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
-        <title>Supermercadohola4</title>
+        <title>Supermercado</title>
     </head>
     <body>
 
@@ -37,7 +37,7 @@
 
                     <ul class="dropdown" id="menu">
                         <li class="dropdown__list">
-                            <a href="#" class="dropdown__link">
+                            <a href="Inicio.jsp" class="dropdown__link">
                                 <img src="./icons/3844470-home-house_110332.png" alt="Inicio" class="nav__icon">
                                 <span class="dropdown__span">Inicio</span>
                             </a>
@@ -122,7 +122,8 @@
         </header>
 
         <div class="principal">
-            <img src="img/principal.jpg" alt=""/>
+            <img src="img/ete sec.webp" alt=""/>
+    
         </div>
 
         <div class="categorias-principal">
