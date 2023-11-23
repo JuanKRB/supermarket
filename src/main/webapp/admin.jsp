@@ -26,7 +26,7 @@
 
             <div class="extras">
 
-                <a href="url">
+                <a href="adminCategorias.jsp">
                     <div class="configuracionProductos">
 
                         <img src="img/configuracion.png" alt=""/>
@@ -40,7 +40,7 @@
                     </div>
                 </a>
 
-                <a href="url">
+                <a href="tablaClientes.jsp">
                     <div class="configuracionUsuarios">
                         <img src="img/configuracion.png" alt=""/>
                         <div class="h4">
@@ -50,7 +50,7 @@
                     </div>
                 </a>
 
-                <a href="url">
+                <a href="configuracionAdmin.jsp">
                     <div class="configuracionCuenta">
 
                         <img src="img/configuracion.png" alt=""/>
