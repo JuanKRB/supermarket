@@ -1,0 +1,63 @@
+
+.imagenCarrito {
+    width: 35px;
+    margin-left: 13px;
+}
+
+
+.lupa img {
+  width: 5px;
+  margin-left: 1px;
+  background-color: red;
+
+}
+
+.nav__icon1{
+        width: 60px;
+        display: block;
+        border: none;
+        margin-top: 44px;
+        margin-left: 5px;
+    }
+
+    .nav__icon {
+        width: 20px;
+        display: block;
+        border: none;
+    }
+
+@media (max-width: 500px) {
+
+    nav{
+
+        margin-left: 5%;
+
+    }
+
+    .imagenCarrito {
+        width: 26px;
+        margin-left: 6px;
+    }
+
+    .lupa img {
+        width: 26px;
+        margin-left: 6px;
+
+    }
+
+    .nav__icon1{
+        width: 60px;
+        display: block;
+        border: none;
+        margin-top: 44px;
+        margin-left: 5px;
+    }
+
+    .nav__icon {
+        width: 20px;
+        display: block;
+        border: none;
+    }
+
+}
+

@@ -1,8 +1,4 @@
-<%-- 
-    Document   : IniciarSesion
-    Created on : 15 nov. 2023, 14:24:06
-    Author     : Carlos Oviedo
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,74 +6,89 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/IniciarSesion2.css">
         <link rel="stylesheet" href="./css/transicion.css">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
         <title>Supermercado</title>
     </head>
     <body>
-         <title>Login y Register</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Login y Register</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="./css/IniciarSesion.css">
-</head>
+        
+    </head>
 <body>
 
-        <main>
-            <a href="Inicio.jsp">--Atras--</a><br>
-            <div class="contenedor__todo">
-                <div class="caja__trasera">
-                    <div class="caja__trasera-login">
-                        <h3>¿Ya tienes una cuenta?</h3>
-                        <p>Inicia sesión para entrar en la página</p>
-                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
-                    </div>
-                    <div class="caja__trasera-register">
-                        <h3>¿Aún no tienes una cuenta?</h3>
-                        <p>Regístrate para que puedas iniciar sesión</p>
-                        <button id="btn__registrarse">Regístrarse</button>
-                    </div>
-                </div>
-
+    <main>
+        <div class="botonAtras">
+             <a href="Inicio.jsp" ><img src="img/atras.png" alt=""/> Atras</a>
              
-                <div class="contenedor__login-register">
-                    <!--para el login-->
-                    <form action="LoginServlet" method="POST" class="formulario__login">
-                        <h2>Iniciar Sesión</h2>
-                        <input type="text" placeholder="Correo Electronico" name="correoLogin" required>
-                        <input type="password" placeholder="Contraseña" name="contraLogin" required>
-                        <button>Entrar</button>
-                    </form>
-
-                    <!--para registrarse-->
-                    <form action="LoginServlet" method="POST" class="formulario__register">
-                        <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" name="nombreRegistarse" required>
-                        <input type="text" placeholder="Correo Electronico" name="correoRegistarse" required>
-                        <input type="text" placeholder="Usuario" name="usuarioRegistarse" equired>
-                        <input type="password" placeholder="Contraseña" name="contraRegistarse" required>
-                        <button>Regístrarse</button>
-                    </form>
+        </div><br>
+       
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Regístrarse</button>
                 </div>
             </div>
 
-        </main>
 
-       <script>
-       
+            <div class="contenedor__login-register">
+                <!--para el login-->
+                <form action="LoginServlet" method="POST" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico" name="correoLogin" required>
+                    <input type="password" placeholder="Contraseña" name="contraLogin" required>
+                    <div >
+                        <% 
+                        Boolean flagRegistro = (Boolean)session.getAttribute("registro");
+                        if(flagRegistro != null && flagRegistro == false){
+                        %><h2 id="logicaLogin">Su contaseña o/y su usuario son incorrectos</h2>
+                        <%
+                        }
+                        %>
+                    </div>
+                    <button>Entrar</button>
+                </form>
+
+                <!--para registrarse-->
+                <form action="LoginServlet" method="POST" class="formulario__register">
+                    <h2>Regístrarse</h2>
+                    <input type="text" placeholder="Nombre completo" name="nombreRegistarse" required>
+                    <input type="text" placeholder="Correo Electronico" name="correoRegistarse" required>
+                    <input type="text" placeholder="Usuario" name="usuarioRegistarse" equired>
+                    <input type="password" placeholder="Contraseña" name="contraRegistarse" required>
+                    
+                    <button>Regístrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+
         document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
         document.getElementById("btn__registrarse").addEventListener("click", register);
         window.addEventListener("resize", anchoPage);
 
-      
+
         var formularioLogin = document.querySelector(".formulario__login");
         var formularioRegister = document.querySelector(".formulario__register");
         var contenedorLoginRegister = document.querySelector(".contenedor__login-register");
         var cajaTraseraLogin = document.querySelector(".caja__trasera-login");
         var cajaTraseraRegister = document.querySelector(".caja__trasera-register");
 
-      
+
 
         function anchoPage() {
             if (window.innerWidth > 850) {
@@ -128,6 +139,6 @@
             }
         }
     </script>
-    
-    </body>
+
+</body>
 </html>

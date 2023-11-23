@@ -3,8 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F1F1F1;
-
-
 }
 
 main{
@@ -27,7 +25,7 @@ main{
     
     width: 440px;
     height: 540px;
-    margin-top: 90px;
+    margin-top: 30px;
     /*margin-left: 27px;*/
     
     margin-left: 300px;
@@ -46,7 +44,7 @@ main{
 
 .extras{
     
-    display: block;
+    display: inline-block;
 }
 
 .img-info{
@@ -59,7 +57,7 @@ main{
     
     width: 440px;
     height: 110px;
-    margin-top: 90px;
+    margin-top: 30px;
     margin-left: 70px;
     border-radius: 12px;
     background-color: #FDFEFE;
@@ -68,14 +66,22 @@ main{
 .tarjetas a{
   font-size: 14px;
   color: black;
-  margin-left: 317px;
+  margin-left: 297px;
   text-decoration: none;
+}
+
+.tarjetas hr{
+  margin-top: 10px;
 }
 
 .img-tarjeta{
     
     display: block;
     margin-left: 20px;
+}
+
+#codigo{
+    margin-left: 80px;
 }
 
 .infoTarjeta{
@@ -86,7 +92,8 @@ main{
 }
 .div1{
     display: inline-block;
-
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .div1 h4{
     margin-left: 24px;
@@ -98,7 +105,7 @@ main{
     margin: 0px;
     width: 250px;
     display: inline-block;
-    
+    margin-bottom: 15px;
 }
 
 .div2 h4{
@@ -128,6 +135,13 @@ main{
     background-color: #FDFEFE;
 }
 
+.facturas img{
+   margin-top: 10px;
+   width: 50px;
+   height: 50px;
+   margin-left: 14px;
+}
+
 .direcciones{
 
     width: 440px;
@@ -138,6 +152,13 @@ main{
     background-color: #FDFEFE;
 }
 
+.direcciones img{
+   margin-top: 10px;
+   width: 50px;
+   height: 50px;
+   margin-left: 14px;
+}
+
 .configuracionCuenta{
     
     width: 440px;
@@ -146,4 +167,11 @@ main{
     margin-left: 70px;
     border-radius: 12px;
     background-color: #FDFEFE;
+}
+
+.configuracionCuenta img{
+   margin-top: 10px;
+   width: 50px;
+   height: 50px;
+   margin-left: 14px;
 }

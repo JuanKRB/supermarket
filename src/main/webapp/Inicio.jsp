@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/header5.css">
-        <link rel="stylesheet" href="./css/inicio6.css">   
-        <link rel="stylesheet" href="./css/inicio-header4.css">
+        <link rel="stylesheet" href="./css/header7.css">
+        <link rel="stylesheet" href="./css/inicio7.css">   
+        <link rel="stylesheet" href="./css/inicio-header5.css">
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/transicion.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -19,8 +19,6 @@
         <title>Supermercado</title>
     </head>
     <body>
-
-
 
         <header>
             <main class="nav">
@@ -112,7 +110,7 @@
             </div>
 
             <div class="lupa">
-                <a href="Inicio.jsp" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
+                <a href="buscar.jsp" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
             </div>
 
             <div class="lupa">
@@ -120,7 +118,7 @@
             </div>
 
         </header>
-
+        
         <div class="principal">
             <img src="img/principal.jpg" alt=""/>
     

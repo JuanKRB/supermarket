@@ -1,0 +1,207 @@
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#categorias {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.sesion {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.enlaces-sesion {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.imagen-con-descripcion {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.Carnes{
+    margin-top: 20px;
+    margin-left: 48%;
+    width: 730px;
+    height: 170px;
+    background: #D0D3D4;
+    border-radius: 12px;
+    padding: 0px;
+    transition: transform 0.5s ease;
+}
+
+.Carnes:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.alimentos{
+    padding: 0px;
+    border: none;
+
+}
+
+.Bebidas{
+
+    margin-top: 35px;
+    margin-left: 35%;
+    width: 730px;
+    height: 170px;
+    background: #D0D3D4;
+    border-radius: 12px;
+    padding: 0px;
+    transition: transform 0.5s ease;
+}
+
+.Bebidas:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.Electrodomesticos{
+
+    margin-top: 35px;
+    margin-left: 48%;
+    width: 730px;
+    height: 170px;
+    background: #D0D3D4;
+    border-radius: 12px;
+    padding: 0px;
+    transition: transform 0.5s ease;
+}
+
+.Electrodomesticos:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+
+.principal{
+    margin-top: 20px;
+    width: 1300px;
+    height: 490px;
+    border-radius: 12px;
+    margin-bottom: 50px;    
+    margin-left: 7%;
+}
+
+.principal img{
+    width: 1300px;
+    height: 490px;
+    border-radius: 12px;
+    border: none;
+    
+}
+
+.categorias-1{
+    display: flex;
+    text-decoration: none;
+}
+
+.categorias-1 hr{
+    background-color: black;
+    color: black;
+  
+    
+}
+
+.categorias-1 h2{
+     color: black;
+    text-decoration: none;
+}
+
+.categoria2{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 62px;
+    background-color:#FDFEFE;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.categoria3{
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    border-radius: 62px;
+    background-color:#FDFEFE;
+    margin-left: 58px;
+    margin-bottom: 40px;
+    
+}
+
+.categoria2 img{
+    
+    width: 130px;
+    
+    margin-left: 25px;
+    border: none;
+   text-align: center;
+    
+}
+
+.categoria3 img{
+    
+    width: 130px;
+    
+    margin-left: 25px;
+    border: none;
+   text-align: center;
+    
+}
+
+.categoria3 h2{
+    
+    margin-top: 8px;
+    font-size: 22px;
+    margin-left: 10px;
+    
+}
+
+.categoria2 h2{
+    margin-top: 8px;
+    font-size: 22px;
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+#electro-h2{
+    margin-left: 32px;
+    text-decoration: none;
+}
+
+#carnes{
+    text-decoration: none;
+    margin-left: 51px;
+}
+
+#frutas{
+    margin-left: 58px;
+    text-decoration: none;
+}
+
+#alimentos{
+    
+    margin-left: 38px;
+}
+
+
+
+
