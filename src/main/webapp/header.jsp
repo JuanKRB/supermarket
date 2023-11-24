@@ -76,14 +76,30 @@
                             </div>
                         </li>
 
+                        
+
                         <li class="dropdown__list">
                             <a href="#" class="dropdown__link">
-                                <img src="./icons/boton-web-de-ayuda.png" alt="Ayuda" class="nav__icon">
-                                <span class="dropdown__span">Ayuda</span>
+                                <img src="./icons/liquido-de-limpieza.png" alt="Alimentos" class="nav__icon">
+                                <span class="dropdown__span">Alimentos</span>
+                                <img src="./icons/flecha-hacia-abajo (5).png" alt="Desplegar" class="dropdown__arrow">
+                                <input type="checkbox" class="dropdown__check">
                             </a>
+
+                            <div class="dropdown__content">
+                                <ul class="dropdown__sub">
+                                    <li class="dropdown__li">
+                                        <a href="#" class="dropdown__anchor">Proyecto 1</a>
+                                    </li>
+                                    <li class="dropdown__li">
+                                        <a href="#" class="dropdown__anchor">Proyecto 2</a>
+                                    </li>
+                                    <li class="dropdown__li">
+                                        <a href="#" class="dropdown__anchor">Proyecto 3</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                    </ul>
-                </div>
             </main>
             <!--<a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>-->
 
