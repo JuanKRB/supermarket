@@ -52,13 +52,13 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 1</a>
+                                        <a href="Alimentos.jsp" class="dropdown__anchor">Galletas</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 2</a>
+                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Salsas</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 3</a>
+                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Cafe</a>
                                     </li>
                                 </ul>
                             </div>
@@ -75,11 +75,11 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Contacto 1</a>
-                                        <a href="#" class="dropdown__anchor">Contacto 1</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Celulares</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Televisores</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Contacto 2</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Perifericos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -96,13 +96,13 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 1</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Jabones</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 2</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Detergentes</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 3</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Bolsas</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,7 +123,7 @@
             </nav>
 
             <div class="carrito">
-                <a href="Inicio.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
+                <a href="carrito.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
             </div>
 
             <div class="lupa">
@@ -190,40 +190,7 @@
             </div>
 
         </div>
-        <!--
-        <div class="categorias-2">
-            
-            <div class="categoria3">
-                <img src="img-categorias/carnes.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Bebidas</h2>
-            </div>
-            <div class="categoria3">
-                <img src="img-categorias/lacteo.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Lacteos</h2>
-            </div>  
-            <div class="categoria3">
-                <img src="img-categorias/frutas.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Frutas</h2>
-            </div>  
-            <div class="categoria3">
-                <img src="img-categorias/electronica.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Electrónica</h2>
-            </div>  
-            <div class="categoria3">
-                <img src="img-categorias/limpieza.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Limpieza</h2>
-            </div>  
-            <div class="categoria3">
-                <img src="img-categorias/panaderia.svg" alt="Descripción del SVG">
-                <hr>
-                <h2>Panaderia</h2>
-            </div>
-        -->
+      
     </div>
 
 

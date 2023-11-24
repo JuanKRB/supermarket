@@ -6,8 +6,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/buscar4.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="./css/producto9.css">
-        <title>JSP Page</title>
+        <link rel="stylesheet" href="./css/producto10.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <title>Supermercado</title>
     </head>
     <body>
         

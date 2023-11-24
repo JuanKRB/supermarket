@@ -15,9 +15,9 @@
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/add.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pen.css' rel='stylesheet'>
-
-
-        <title>JSP Page</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <title>Supermercado</title>
     </head>
     <body>
 
@@ -146,7 +146,7 @@
                         <td>Alimento Tipo 1</td>
                         <td>
                             <div class="icon-buttons-container">
-                                <form action="miFormulario" method="post" id="miFormulario" class="icon-form">
+                                <form action="#" method="post" id="miFormulario" class="icon-form">
                                     <button type="submit" name="id" value="${usuario.id}" class="icon-button">
                                         <i class="gg-trash"></i>
                                     </button>

@@ -12,7 +12,9 @@
         <link rel="stylesheet" href="./css/adminCategorias1.css">
         <link rel="stylesheet" href="./css/botonAtras.css">
         <link rel="stylesheet" href="./css/verArtirculoAdmin.css">
-        <title>JSP Page</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <title>Supermercado</title>
     </head>
     <body>
          <div class="botonL">

@@ -1,0 +1,106 @@
+
+
+.tarjeta-div{
+    margin-top: 60px;
+    width: 850px;
+    height: 190px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    margin-left: 24%;
+    display: flex;
+}
+
+.img-tarjeta {
+    display: block;
+
+}
+
+.img-tarjeta img{
+    width: 140px;
+    height: 150px;
+    margin-left: 30px;
+   margin-top: 20px;
+}
+
+.info{
+
+    margin-left: 50px;
+}
+
+.info h4{
+    margin-top: 6px;
+    font-size: 20px;
+
+}
+
+.info p{
+    margin-top: 6px;
+
+}
+
+#fechaV{
+
+    margin-top: 26px;
+}
+
+#nombre{
+    margin-top: 34px;
+
+}
+
+.info2{
+
+    margin-left: 90px;
+}
+
+.info2 h4{
+    margin-top: 6px;
+    font-size: 20px;
+
+}
+
+.info2 p{
+    margin-top: 6px;
+
+}
+
+#fechaV{
+
+    margin-top: 26px;
+}
+
+#nombre{
+    margin-top: 34px;
+
+}
+
+.imagenes{
+    display: block;
+    margin-left: 65px;
+}
+
+.basurero{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 4px;
+}
+
+.lapiz{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .tarjeta-div{
+
+        margin-left: 14%;
+    }
+
+}

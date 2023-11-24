@@ -1,0 +1,41 @@
+
+
+.botonAtras{
+    
+   width: 50px;
+   height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.botonAtras img{
+    
+   width: 50px;
+   height: 50px;
+   margin-top: 10px;
+  margin-left: 10px;
+}
+
+.informacion-usuario {
+
+    width: 440px;
+    height: 540px;
+    margin-top: 30px;
+    /*margin-left: 27px;*/
+
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.container mt-5{
+    
+    margin-left: 40px;
+    background-color: red;
+}
+
+.col-8 input{
+    width: 270px;
+}
+
+

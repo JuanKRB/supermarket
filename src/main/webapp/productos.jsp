@@ -5,7 +5,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/header5.css">    
-        <link rel="stylesheet" href="./css/producto9.css">
+        <link rel="stylesheet" href="./css/producto10.css">
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/transicion.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,7 +33,7 @@
                 </div>
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -58,7 +58,7 @@
 
             </a>   
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -82,7 +82,7 @@
 
             </a>  
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -107,7 +107,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -132,7 +132,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -157,7 +157,7 @@
 
             </a>
 
-            <form action="action">           
+           <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -182,7 +182,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -206,7 +206,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -231,7 +231,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -256,7 +256,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -282,7 +282,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -308,7 +308,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -333,7 +333,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -358,7 +358,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -383,7 +383,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -408,7 +408,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -433,7 +433,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -458,7 +458,7 @@
 
             </a>
 
-            <form action="action">           
+            <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
@@ -473,7 +473,7 @@
             <a href="productos_4.jsp">4</a>
             <a href="productos_5.jsp">5</a>
             <a href="productos_6.jsp">6</a>
-            <a href="" disabled>>></a>
+            <a href="" disabled>|    >></a>
         </div>
 
 

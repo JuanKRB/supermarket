@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="./css/categoria.css">
         <link rel="stylesheet" href="./css/transicion.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <title>JSP Page</title>
-    </head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <title>Supermercado</title>
     <body>
          <header>
             <main class="nav">
@@ -43,13 +43,13 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 1</a>
+                                        <a href="Alimentos.jsp" class="dropdown__anchor">Galletas</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 2</a>
+                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Salsas</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 3</a>
+                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Cafe</a>
                                     </li>
                                 </ul>
                             </div>
@@ -66,22 +66,20 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Contacto 1</a>
-                                        <a href="#" class="dropdown__anchor">Contacto 1</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Celulares</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Televisores</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Contacto 2</a>
+                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Perifericos</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
 
-                        
-
-                        <li class="dropdown__list">
+                          <li class="dropdown__list">
                             <a href="#" class="dropdown__link">
                                 <img src="./icons/liquido-de-limpieza.png" alt="Alimentos" class="nav__icon">
-                                <span class="dropdown__span">Alimentos</span>
+                                <span class="dropdown__span">Limpieza</span>
                                 <img src="./icons/flecha-hacia-abajo (5).png" alt="Desplegar" class="dropdown__arrow">
                                 <input type="checkbox" class="dropdown__check">
                             </a>
@@ -89,17 +87,20 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 1</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Jabones</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 2</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Detergentes</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="#" class="dropdown__anchor">Proyecto 3</a>
+                                        <a href="Limpieza.jsp" class="dropdown__anchor">Bolsas</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
+
+                    </ul>
+                </div>
             </main>
             <!--<a href="Inicio.jsp" class="logo"><img src="./img/logo.png" alt="alt" class="imagenLogo"/></a>-->
 
@@ -113,7 +114,7 @@
             </nav>
 
             <div class="carrito">
-                <a href="Inicio.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
+                <a href="carrito.jsp" class="imagenCarritoA"><img src="./img/carrito.png" alt="alt" class="imagenCarrito"/></a>
             </div>
 
             <div class="lupa">

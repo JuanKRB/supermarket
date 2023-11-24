@@ -23,7 +23,7 @@
 
     <main>
         <div class="botonAtras">
-             <a href="Inicio.jsp" ><img src="img/atras.png" alt=""/> Atras</a>
+             <a href="Inicio.jsp" ><img src="img/atras.png" alt=""/></a>
              
         </div><br>
        
