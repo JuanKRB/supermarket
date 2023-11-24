@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-
-
-
+/* Estilos existentes */
 
 * {
   margin: 0;
@@ -34,7 +32,7 @@ h1 {
 .container {
   display: flex;
   gap: 12px;
-   justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   margin: 0 auto; /* Alineación al centro */
   scroll-snap-type: x mandatory;
@@ -42,7 +40,6 @@ h1 {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
 
 .container .card {
   flex: 0 0 calc(30% - 8px);
@@ -86,4 +83,17 @@ h1 {
   text-align: center;
 }
 
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8c8c8c; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado del enlace */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
 
+/* Cambia el color de fondo al pasar el ratón */
+a:hover {
+  background-color: #bababa;
+}

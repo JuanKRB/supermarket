@@ -16,27 +16,28 @@
 
         <main>
 
-  
 
-                <div class="informacion-usuario">
-                    <img src="img/perfil2.png" alt=""/>
-                    <h4>Admin1</h4>
 
-                    <form action="ProcesoActualizar" method="post">
-                        <label for="usuario">Usuario:</label>
-                        <input type="text" name="usuario" id="usuario" required>
-                        <br>
-
-                        <label for="contrasena">Contraseña:</label>
-                        <input type="password" name="contrasena" id="contrasena" required>
-                        <br>
-
-                        <label for="nuevaContrasena">Nueva Contraseña:</label>
-                        <input type="password" name="nuevaContrasena" id="nuevaContrasena" required>
-                        <br>
-
-                        <input type="submit" value="Actualizar">
-                    </form>
+            <div class="informacion-usuario">
+                <img src="img/perfil2.png" alt=""/>
+                <h4>Admin1</h4>
+                <div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
                 </div>
 
         </main>

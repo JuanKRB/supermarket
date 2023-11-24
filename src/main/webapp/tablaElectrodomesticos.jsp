@@ -9,17 +9,21 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-              <link rel="stylesheet" href="./css/TablaAlimentos.css">
+        <link rel="stylesheet" href="./css/TablaAlimentos.css">
+        <link rel="stylesheet" href="./css/botonAtras.css">
+        <link rel="stylesheet" href="./css/BotonesTablas.css">
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/add.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pen.css' rel='stylesheet'>
         <title>JSP Page</title>
     </head>
     <body>
-       
-          <form action="FormularioAgregar" method="post">
-            <input type="submit" name="agregar" value="Agregar">
-        </form><br>
-        <form action="FormularioAgregar" method="post">
-            <input type="submit" name="agregar" value="Modificar">
-        </form> 
+
+        <div class="botonL">
+            <a href="adminCategorias.jsp" ><img src="img/atras.png" alt=""/> Atras</a>
+
+        </div><br>
+
 
         <div class="container">
             <table>
@@ -58,16 +62,32 @@
                         <td>35cm</td>
                         <td>Negro</td>
                         <td> buena calidad</td>
-                       
+
                         <td>
-                            <button form="miFormulario" type="submit" name="id" value="${usuario.id}">
-                                Eliminar
-                            </button>
+                            <div class="icon-buttons-container">
+                                <form action="miFormulario" method="post" id="miFormulario" class="icon-form">
+                                    <button type="submit" name="id" value="${usuario.id}" class="icon-button">
+                                        <i class="gg-trash"></i>
+                                    </button>
+                                </form>
+
+                                <form action="FormularioAgregar" method="post" class="icon-form">
+                                    <button type="submit" name="agregar" class="icon-button">
+                                        <i class="gg-add"></i>
+                                    </button>
+                                </form>
+
+                                <form action="FormularioAgregar" method="post" class="icon-form">
+                                    <button type="submit" name="agregar" class="icon-button">
+                                        <i class="gg-pen"></i>
+                                    </button>
+                                </form>
+                            </div>
                     </tr>
 
                 </tbody>
             </table>
         </div>
-        
+
     </body>
 </html>

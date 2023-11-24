@@ -1,0 +1,20 @@
+.icon-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px; /* Ajusta según sea necesario */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-form {
+    display: flex;
+    align-items: center;
+}
+
+

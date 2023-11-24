@@ -10,10 +10,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="./css/adminCategorias1.css">
+        <link rel="stylesheet" href="./css/botonAtras.css">
+        <link rel="stylesheet" href="./css/verArtirculoAdmin.css">
         <title>JSP Page</title>
     </head>
     <body>
+         <div class="botonL">
+             <a href="admin.jsp" ><img src="img/atras.png" alt=""/> Atras</a>
+             
+         </div><br>
+         
         <h1>Categorias</h1><br><br><br>
+        
         <section class="container">
             <div class="card">
                 <div class="image">
@@ -39,5 +47,7 @@
               
             </div>
         </section>
+        
+         
     </body>
 </html>

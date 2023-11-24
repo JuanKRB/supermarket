@@ -141,23 +141,22 @@ main{
     display: none;
 }
 
-#logicaLogin{ 
+#logicaLogin{
     margin-top: 8px;
     font-size: 15px;
-    color: red;  
+    color: red;
 }
 
 .botonAtras{
-    width: 110px;
-    height: 40px;
-    font-size: 30px;
-    background-color: #FDFEFE;
-    border-radius: 12px;
-    
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+
 }
 
-.botonAtras a{ 
-   color: black;
+.botonAtras a{
+    color: black;
 }
 
 .botonAtras img{
