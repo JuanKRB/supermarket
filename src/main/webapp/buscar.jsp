@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/buscar3.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buscar4.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="./css/producto9.css">
         <title>JSP Page</title>
     </head>
@@ -19,7 +19,7 @@
             </form>
 
             <div class="div-buscar">
-                <form action="action">
+                <form action="buscarServlet" method="POST">
                     <button type="submit"><img src="img/lupa.png" alt=""/></button>
                 </form>         
             </div>

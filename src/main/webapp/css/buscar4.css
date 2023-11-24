@@ -1,0 +1,96 @@
+
+.buscar{
+    display: flex;
+    width: 530px;
+    height: 30px;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-left: 30%;
+
+}
+
+
+.buscar button{
+    border: none;
+    background: none;
+}
+
+.buscar input{
+    width: 600px;
+    height: 40px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border: none;
+    font-size: 18px;
+}
+
+.div-buscar{
+    width: 50px;
+    height: 40px;
+    background-color: green;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    padding-right: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.div-buscar:hover {
+    background-color: red;
+}
+.div-buscar img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 4px;
+
+}
+
+@media (max-width: 930px) {
+
+    .buscar input{
+        width: 500px;
+        height: 40px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        border: none;
+        font-size: 18px;
+
+    }
+
+    .buscar{
+
+        margin-left: 16%;
+
+    }
+
+    .div-buscar{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    .buscar input{
+        width: 300px;
+        height: 40px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        border: none;
+        font-size: 18px;
+    }
+
+    .buscar{
+
+        margin-left: 15%;
+    }
+
+    .div-buscar{
+        width: 40px;
+        height: 40px;
+
+    }
+
+}
+

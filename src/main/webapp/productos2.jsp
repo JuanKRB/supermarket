@@ -46,7 +46,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/mouse" alt="alt" class="img-producto"/>
+                <img src="./img-productos/mouse.png" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
                     <h4 >Disponible</h4>
