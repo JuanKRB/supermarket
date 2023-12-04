@@ -17,11 +17,11 @@
 
         <%@ include file="header.jsp" %>
 
- 
-     <!--Cambiar desde aqui-->
+        <h1>Buscado JSP</h1>
+
+        <!--Cambiar desde aqui-->
         <div class="buscar">
             <form action="" >
-                
                 <input type="text" name="nombre" placeholder="     Buscar" required>
             </form>
 
@@ -32,13 +32,23 @@
             </div>
 
         </div>
-    <!--Hasta aqui-->
+      <!--Hasta aqui-->
+      
         <% 
-            
+         String nombre = null;
+         
+         if (request.getAttribute("nombre") != null) {
+              nombre = (String) request.getAttribute("nombre");
+        } else {
+            nombre = "NombreNulo";
+        }
+          
            List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista"); 
                
            for( Alimento alimIT : listaAlimentos) {
-           
+            
+           if(alimIT.getNombre().equals(nombre)){
+
         %>
 
         <div class="productoDiv">
@@ -77,7 +87,7 @@
 
         </div>
 
-        <%  
+        <% } 
              } 
         %> 
 

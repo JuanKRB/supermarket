@@ -1,5 +1,8 @@
 
 
+<%@page import="java.util.List"%>
+<%@page import="modelo.Alimento"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,453 +20,52 @@
 
         <%@ include file="header.jsp" %> 
 
+        <% 
+
+           List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista"); 
+
+            for( Alimento alimIT : listaAlimentos) {
+
+        %>
+
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="./img-productos/jugoNaranjaDosPinos.png" alt="alt" class="img-producto"/>
+                <img src="" alt="Imagen del producto" class="img-producto"/>
                 <div class="disponibilidad">
+                    <%
+                      String disponiblidad = alimIT.getDisponibilidad();
+                      
+                      if(disponiblidad.equals("V")){
+                    %>
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡1300</h4>
-                    <p class="nombre">Jugo Naranja 1.8L</p>
-                </div>
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-                <img src="./img-productos/cocaCola-500ml.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>   
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-                <img src="./img-productos/pepsiEnLata.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>  
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/lecheDosPinos.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/bananos.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/atun.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
+                    <h4>Disponible</h4>
+                    <%
+                   }else{
+                    %>
                     <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
+                    <h4>Disponible</h4>
+                    <%           
+                   }              
+                    %>
+
                 </div>
 
                 <div class="informacion">
 
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
+                    <h4 class="precio">₡<%= alimIT.getPrecio() %></h4>
+                    <p class="nombre"><%= alimIT.getNombre() %></p>
                 </div>
-
             </a>
-
-           <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/heladoDosPinos.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
+                
             <form action="carritoServlet" method="POST">           
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
 
-
-        </div>
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/muslosDePollo.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
         </div>
 
-        <div class="productoDiv">
+        <% } %>        
 
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/quesoDosPinos.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/samsungS23Ultra.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/chokis.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/aceite.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/panBlancoBimbo.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/salsaNaturas.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/salsaTomateHeinz.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/sal.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/salsaLizano.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/Nochek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
-
-        <div class="productoDiv">
-
-            <a href="informacionProducto.jsp">
-
-                <img src="./img-productos/cafeSircof.png" alt="alt" class="img-producto"/>
-                <div class="disponibilidad">
-                    <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
-                </div>
-
-                <div class="informacion">
-
-                    <h4 class="precio">₡570</h4>
-                    <p class="nombre">CocaCola Zero  355Ml</p>
-                </div>
-
-            </a>
-
-            <form action="carritoServlet" method="POST">           
-                <button type="submit" class="boton-agregar">+ Agregar</button>
-            </form>
-
-
-        </div>
 
         <div class="cambioPaginas">
             <a href="" disabled><<</a>

@@ -116,7 +116,7 @@
             <nav>
                 <div class="a-nav">
                     <a href="Inicio.jsp" class="inicio">Inicio</a>
-                    <a href="productos.jsp">Productos</a>
+                    <a href="AlimentoController">Productos</a>
                     <a href="IniciarSesion.jsp" class="inicisesion">Iniciar Sesion</a>     
                 </div>
 
@@ -127,7 +127,7 @@
             </div>
 
             <div class="lupa">
-                <a href="buscar.jsp" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
+                <a href="AlimentoController?accion=mostraBuscarPagina" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
             </div>
 
             <div class="lupa">
