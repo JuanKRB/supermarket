@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             String fecha = (String) request.getParameter("fecharegistro");
             String nombre = (String) request.getParameter("nombrecliente");
 
-            
+            //hola
            //FALTA LO DEL ADMIN
            
             if (action != null && action.equals("salir")) {

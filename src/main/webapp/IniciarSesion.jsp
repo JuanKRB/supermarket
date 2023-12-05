@@ -53,7 +53,7 @@
                         <% 
                         Boolean flagInicioSesion = (Boolean)request.getAttribute("inicioSesion");
                         if(flagInicioSesion != null && !flagInicioSesion){
-                        %><h2>Usuario/Contraseña incorrecto</h2>
+                        %><h2>Usuario/Contraseña incorrecta</h2>
                         <%
                         }
                         %>
