@@ -17,16 +17,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
-        
+
     </head>
 <body>
 
     <main>
         <div class="botonAtras">
-             <a href="Inicio.jsp" ><img src="img/atras.png" alt=""/></a>
-             
+            <a href="Inicio.jsp" ><img src="img/atras.png" alt=""/></a>
+
         </div><br>
-       
+
         <div class="contenedor__todo">
             <div class="caja__trasera">
                 <div class="caja__trasera-login">
@@ -46,29 +46,42 @@
                 <!--para el login-->
                 <form action="LoginServlet" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico" name="correoLogin" required>
-                    <input type="password" placeholder="Contraseña" name="contraLogin" required>
-                    <div >
+                    <input type="text" placeholder="email" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+
+                    <div>
                         <% 
-                        Boolean flagRegistro = (Boolean)session.getAttribute("registro");
-                        if(flagRegistro != null && flagRegistro == false){
-                        %><h2 id="logicaLogin">Su contaseña o/y su usuario son incorrectos</h2>
+                        Boolean flagInicioSesion = (Boolean)request.getAttribute("inicioSesion");
+                        if(flagInicioSesion != null && !flagInicioSesion){
+                        %><h2>Usuario/Contraseña incorrecto</h2>
                         <%
                         }
                         %>
                     </div>
-                    <button>Entrar</button>
+                    <button type="submit" id="inicio" name="inicio">Iniciar Sesión</button>
                 </form>
 
                 <!--para registrarse-->
                 <form action="LoginServlet" method="POST" class="formulario__register">
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo" name="nombreRegistarse" required>
-                    <input type="text" placeholder="Correo Electronico" name="correoRegistarse" required>
-                    <input type="text" placeholder="Usuario" name="usuarioRegistarse" equired>
-                    <input type="password" placeholder="Contraseña" name="contraRegistarse" required>
-                    
-                    <button>Regístrarse</button>
+
+                    <input type="text" placeholder="email" name="email" required>
+                    <input type="password" placeholder="password" name="password" required>
+                    <input type="text" placeholder="statusLogin" name="statusLogin" required>
+                    <input type="text" placeholder="fecharegistro" name="fecharegistro" required>
+                    <input type="text" placeholder="nombrecliente" name="nombrecliente" required>
+
+
+                    <div>
+                        <% 
+                        Boolean flagRegistro = (Boolean)session.getAttribute("registro");
+                        if(flagRegistro != null && flagRegistro){
+                        %><h2>Registro con éxito</h2>
+                        <%
+                        }
+                        %>
+                    </div>
+                    <button type="submit" id="register" name="register">Registrar</button>
                 </form>
             </div>
         </div>
