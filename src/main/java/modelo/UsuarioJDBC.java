@@ -23,8 +23,8 @@ public class UsuarioJDBC {
         try {
             host = "127.0.0.1";
             user = "root";
-            password = "carlos18";
-            bd = "supermercado12";
+            password = "1234";
+            bd = "Supermercado";
             driver = "com.mysql.cj.jdbc.Driver";
             //String dir = "jdbc:mysql://"+host+":3306/?user="+user+"";
             Class.forName(driver);

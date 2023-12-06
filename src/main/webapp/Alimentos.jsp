@@ -23,7 +23,7 @@
                 <img src="./img-productos/chokis.png" alt="alt" class="img-producto"/>
                 <div class="disponibilidad">
                     <img src="./img-productos/chek.png" alt="alt" class="chek"/>
-                    <h4 >Disponible</h4>
+                    <h4 >Disponible6</h4>
                 </div>
 
                 <div class="informacion">

@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "cliente", schema = "Supermercado12")
+@Table(name = "cliente", schema = "Supermercado")
 public class Usuario {
 
     private static final long serialVersionUID = 1L;
