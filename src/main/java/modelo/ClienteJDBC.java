@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import static modelo.UsuarioJDBC.con;
+
 
 public class ClienteJDBC {
     
@@ -22,7 +22,7 @@ public class ClienteJDBC {
     public Usuario2 findByEmailAndPass(String correo, String contra) throws SQLException {
         Usuario2 usuario = null;
         String sql = "SELECT * FROM cliente u WHERE u.correo = ? and u.contra = ?";
-        PreparedStatement ps = con.prepareStatement(sql);
+        PreparedStatement ps = conexion.prepareStatement(sql);
         ps.setString(1, correo);
         ps.setString(2, contra);
         ResultSet rs = ps.executeQuery();

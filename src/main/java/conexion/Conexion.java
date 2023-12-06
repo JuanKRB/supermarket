@@ -10,7 +10,7 @@ public class Conexion {
 
     Connection conectar = null;
     String usuario = "root";
-    String conrasenia = "1234";
+    String conrasenia = "carlos18";
     String bd = "Supermercado";
     String ip = "localhost";
     String puerto = "3306";

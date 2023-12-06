@@ -67,9 +67,7 @@
 
                     <input type="text" placeholder="email" name="email" required>
                     <input type="password" placeholder="password" name="password" required>
-                    <input type="text" placeholder="statusLogin" name="statusLogin" required>
-                    <input type="text" placeholder="fecharegistro" name="fecharegistro" required>
-                    <input type="text" placeholder="nombrecliente" name="nombrecliente" required>
+                   
 
 
                     <div>

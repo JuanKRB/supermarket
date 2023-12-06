@@ -34,9 +34,7 @@ public class LoginServlet extends HttpServlet {
             String action = (String) request.getParameter("action");
             String email = (String) request.getParameter("email");
             String pass = (String) request.getParameter("password");
-            String status = (String) request.getParameter("statusLogin");
-            String fecha = (String) request.getParameter("fecharegistro");
-            String nombre = (String) request.getParameter("nombrecliente");
+       
 
             //hola
            //FALTA LO DEL ADMIN

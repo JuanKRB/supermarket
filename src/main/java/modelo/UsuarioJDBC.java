@@ -12,59 +12,22 @@ import java.util.List;
 
 public class UsuarioJDBC {
 
-    static Connection con = null;
-    String host;
-    String user;
-    String password;
-    String bd;
-    String driver;
+    Connection conexion;
 
-    public UsuarioJDBC() {
-        try {
-            host = "127.0.0.1";
-            user = "root";
-            password = "1234";
-            bd = "Supermercado";
-            driver = "com.mysql.cj.jdbc.Driver";
-            //String dir = "jdbc:mysql://"+host+":3306/?user="+user+"";
-            Class.forName(driver);
-//            String dir = "jdbc:mysql://"+host+":3306/clasesprogra?"+"zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC&verifyServerCertificate="+Boolean.FALSE.toString()+"&useSSL="+Boolean.FALSE.toString()+" ["+user+" on Default schema]";
-            String dir = "jdbc:mysql://" + host + ":3306/" + bd + "?" + "autoReconnect=true&useSSL=false";
-//            String dir = "jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=CONVERT_TO_NULL [root on Default schema]";
+    public UsuarioJDBC() throws ClassNotFoundException {
+        Conexion con = new Conexion();
+        conexion = con.getConexion();
 
-            con = DriverManager.getConnection(dir, user, password);
-        } catch (SQLException | ClassNotFoundException ex) {
-            System.err.println("ERROR:" + ex.getMessage());
-        }
-    }
-
-    public Connection getCon() {
-        return con;
-    }
-
-    public void closeConexion() {
-        try {
-            con.close();
-        } catch (SQLException e) {
-
-        }
     }
 
     public Usuario2 save(Usuario2 usuario) {
-        String sql = "INSERT INTO cliente (correo, contra, statusLogin, fechaRegistrado , nombreCliente) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO cliente (correo, contra) VALUES (?,?)";
         try {
 
-            PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps = conexion.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, usuario.getCorreo());
             ps.setString(2, usuario.getContra());
-            String statusLogin = usuario.getStatusLogin();
-            if (statusLogin == null) {
-               
-                statusLogin = "activo";
-            }
-            ps.setString(3, statusLogin);
-            ps.setString(4, usuario.getFecharegistro());
-            ps.setString(5, usuario.getNombrecliente());
+           
             int rowcount = ps.executeUpdate();
             if (rowcount == 1) {
                 ResultSet rs = ps.getGeneratedKeys();
@@ -74,7 +37,7 @@ public class UsuarioJDBC {
             } else {
                 throw new SQLException("El 'insert' no ocurrio, valor de: " + rowcount);
             }
-            con.close();
+            conexion.close();
 
         } catch (SQLException ex) {
             System.err.println("ERROR:" + ex.getMessage());
@@ -85,7 +48,7 @@ public class UsuarioJDBC {
     public Usuario2 findByEmailAndPass(String correo, String contra) throws SQLException {
         Usuario2 usuario = null;
         String sql = "SELECT * FROM cliente u WHERE u.correo = ? and u.contra = ?";
-        PreparedStatement ps = con.prepareStatement(sql);
+        PreparedStatement ps = conexion.prepareStatement(sql);
         ps.setString(1, correo);
         ps.setString(2, contra);
         ResultSet rs = ps.executeQuery();
