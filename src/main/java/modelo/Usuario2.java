@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "cliente", schema = "Supermercado")
-public class Usuario {
+public class Usuario2 {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -97,7 +97,7 @@ public class Usuario {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Usuario other = (Usuario) obj;
+        final Usuario2 other = (Usuario2) obj;
         if (!Objects.equals(this.correo, other.correo)) {
             return false;
         }

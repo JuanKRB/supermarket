@@ -1,8 +1,3 @@
-<%-- 
-    Document   : Inicio
-    Created on : 15 nov. 2023, 13:21:15
-    Author     : Carlos Oviedo
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

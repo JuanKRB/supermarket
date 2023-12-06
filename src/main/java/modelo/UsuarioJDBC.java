@@ -50,7 +50,7 @@ public class UsuarioJDBC {
         }
     }
 
-    public Usuario save(Usuario usuario) {
+    public Usuario2 save(Usuario2 usuario) {
         String sql = "INSERT INTO cliente (correo, contra, statusLogin, fechaRegistrado , nombreCliente) VALUES (?,?,?,?,?)";
         try {
 
@@ -82,8 +82,8 @@ public class UsuarioJDBC {
         return usuario;
     }
 
-    public Usuario findByEmailAndPass(String correo, String contra) throws SQLException {
-        Usuario usuario = null;
+    public Usuario2 findByEmailAndPass(String correo, String contra) throws SQLException {
+        Usuario2 usuario = null;
         String sql = "SELECT * FROM cliente u WHERE u.correo = ? and u.contra = ?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, correo);
@@ -95,8 +95,8 @@ public class UsuarioJDBC {
         return usuario;
     }
 
-    private Usuario establecerLibro(ResultSet rs) {
-        Usuario usuario = new Usuario();
+    private Usuario2 establecerLibro(ResultSet rs) {
+        Usuario2 usuario = new Usuario2();
         try {
             usuario.setIdCliente(rs.getLong(1));
             usuario.setCorreo(rs.getString(2));

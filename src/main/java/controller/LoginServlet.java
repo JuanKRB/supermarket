@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import modelo.Usuario;
+import modelo.Usuario2;
 import modelo.UsuarioJDBC;
 
 @WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
@@ -93,7 +93,7 @@ public class LoginServlet extends HttpServlet {
 
         String passEncrip = convertirdorHexMD5(contra);
 
-        Usuario usuario = new Usuario();
+        Usuario2 usuario = new Usuario2();
         usuario.setCorreo(correo);
         usuario.setContra(passEncrip);
 
@@ -107,7 +107,7 @@ public class LoginServlet extends HttpServlet {
     private boolean buscarUsuario(String correo, String contra) throws NoSuchAlgorithmException, SQLException, ClassNotFoundException {
         String passEncrip = convertirdorHexMD5(contra);
         UsuarioJDBC usuarioJDBC = new UsuarioJDBC();
-        Usuario usuario = usuarioJDBC.findByEmailAndPass(correo, passEncrip);
+        Usuario2 usuario = usuarioJDBC.findByEmailAndPass(correo, passEncrip);
         return usuario != null;
     }
 
