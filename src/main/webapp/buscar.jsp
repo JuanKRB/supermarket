@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/buscar4.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buscar6.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="./css/producto10.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
@@ -17,22 +17,13 @@
 
         <%@ include file="header.jsp" %>
 
- 
-     <!--Cambiar desde aqui-->
-        <div class="buscar">
-            <form action="" >
-                
-                <input type="text" name="nombre" placeholder="     Buscar" required>
+        <div class="div-buscar3">
+            <form action="AlimentoController?accion=buscar" method="POST">   
+                <input type="text" name="nombre" placeholder="     Buscar" id="input-div-buscar3" required>
+                <button type="submit" id="boton-div-buscar3"><img src="img/lupa.png" alt=""/></button>
             </form>
-
-            <div class="div-buscar">
-                <form action="AlimentoController?accion=buscar" method="POST">
-                    <button type="submit"><img src="img/lupa.png" alt=""/></button>
-                </form>         
-            </div>
-
         </div>
-    <!--Hasta aqui-->
+        
         <% 
             
            List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista"); 

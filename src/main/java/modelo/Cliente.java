@@ -38,8 +38,5 @@ public class Cliente extends Persona {
         this.correoCliente = correo;
     }
     
-    
-    
-    
-    
+
 }

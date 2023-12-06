@@ -44,7 +44,7 @@
 
             <div class="contenedor__login-register">
                 <!--para el login-->
-                <form action="LoginServlet" method="POST" class="formulario__login">
+                <form action="superAdmin.jsp" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="email" name="email" required>
                     <input type="password" placeholder="password" name="password" required>

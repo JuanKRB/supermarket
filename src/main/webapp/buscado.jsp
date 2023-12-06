@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/buscar4.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buscar6.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="./css/producto10.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
@@ -17,39 +17,30 @@
 
         <%@ include file="header.jsp" %>
 
-        <h1>Buscado JSP</h1>
-
-        <!--Cambiar desde aqui-->
-        <div class="buscar">
-            <form action="" >
-                <input type="text" name="nombre" placeholder="     Buscar" required>
+        <div class="div-buscar3">
+            <form action="AlimentoController?accion=buscar" method="POST">   
+                <input type="text" name="nombre" placeholder="     Buscar" id="input-div-buscar3" required>
+                <button type="submit" id="boton-div-buscar3"><img src="img/lupa.png" alt=""/></button>
             </form>
-
-            <div class="div-buscar">
-                <form action="AlimentoController?accion=buscar" method="POST">
-                    <button type="submit"><img src="img/lupa.png" alt=""/></button>
-                </form>         
-            </div>
-
         </div>
-      <!--Hasta aqui-->
-      
+
         <% 
-         String nombre = null;
+         String nombre = request.getParameter("nombre").toLowerCase(); 
          
-         if (request.getAttribute("nombre") != null) {
-              nombre = (String) request.getAttribute("nombre");
-        } else {
-            nombre = "NombreNulo";
-        }
-          
-           List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista"); 
-               
-           for( Alimento alimIT : listaAlimentos) {
-            
-           if(alimIT.getNombre().equals(nombre)){
+         boolean noProducto = true;
+
+         List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista");
+
+         for (Alimento alimIT : listaAlimentos) {  
+           String nombreProducto = alimIT.getNombre().toLowerCase();  
+           String primeraLetraNombreProducto = nombreProducto.substring(0, 1);
+
+        if (nombreProducto.contains(nombre) || primeraLetraNombreProducto.equals(nombre)) {
+        noProducto = false;
 
         %>
+
+
 
         <div class="productoDiv">
 
@@ -87,8 +78,19 @@
 
         </div>
 
-        <% } 
+        <%
+            } 
              } 
+
+         if (noProducto) {
+        %>
+        <div class="noEncontroDiv">
+            <img src="img/caraTriste.png" alt=""/>
+            <h4>Lo sentimos no hay productos de los que busco</h4>
+        </div>
+        <%
+
+         }
         %> 
 
 

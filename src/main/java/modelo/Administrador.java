@@ -6,7 +6,7 @@ public class Administrador extends Persona{
     private String adminNombre;
     private String correoAdmin;
 
-    public Administrador(String adminNombre, String correoAdmin, int id, int contra, String statusLogin, String fechaRegistrado) {
+    public Administrador(int id, int contra, String statusLogin, String fechaRegistrado, String adminNombre, String correoAdmin) {
         super(id, contra, statusLogin, fechaRegistrado);
         this.adminNombre = adminNombre;
         this.correoAdmin = correoAdmin;

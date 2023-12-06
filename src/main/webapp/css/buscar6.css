@@ -1,0 +1,122 @@
+
+
+.div-buscar3 {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+
+.div-buscar3 form {
+    display: flex;
+    align-items: center;
+}
+
+#input-div-buscar3 {
+    width: 650px;
+    height: 40px;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#boton-div-buscar3 {
+    width: 45px;
+    height: 40px;
+    border: none;
+    background-color: green;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0;
+    transition: background-color 0.2s ease;
+}
+
+#boton-div-buscar3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.div-buscar3 button {
+    appearance: none;
+}
+
+#boton-div-buscar3:hover {
+    background-color: red;
+}
+
+.noEncontroDiv{
+    background-color: white;
+    width: 400px;
+    height: 390px;
+    margin-top: 30px;
+    margin-left: 37%;
+    border-radius: 12px;
+    margin-bottom: 80px;
+}
+
+.noEncontroDiv img{
+    width: 200px;
+    height: 200px;
+    margin-left: 99px;
+    margin-top: 30px;
+
+}
+
+.noEncontroDiv h4{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+
+}
+
+
+@media (max-width: 930px) {
+
+    .buscar input{
+        width: 500px;
+        height: 40px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        border: none;
+        font-size: 18px;
+
+    }
+
+    .buscar{
+
+        margin-left: 16%;
+
+    }
+
+    .div-buscar{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    .buscar input{
+        width: 300px;
+        height: 40px;
+        border-bottom-left-radius: 12px;
+        border-top-left-radius: 12px;
+        border: none;
+        font-size: 18px;
+    }
+
+    .buscar{
+
+        margin-left: 15%;
+    }
+
+    .div-buscar{
+        width: 40px;
+        height: 40px;
+
+    }
+
+}
+
