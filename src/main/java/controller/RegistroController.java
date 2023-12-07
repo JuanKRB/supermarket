@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -32,46 +33,60 @@ public class RegistroController extends HttpServlet {
         String accion = request.getParameter("accion");
 
         RequestDispatcher dispatcher = null;
+        
+        HttpSession session = request.getSession();
 
         RegistroJDBC registrojdbc = new RegistroJDBC();
+        
+        String noCuenta;
 
-        if (accion == null || accion.isEmpty()) {
+        if ("irALogin".equals(accion)) {
+            noCuenta = "F";
+            session.setAttribute("noCuenta", noCuenta);
             dispatcher = request.getRequestDispatcher("IniciarSesion.jsp");
+            dispatcher.forward(request, response);
+            
         } else if ("login".equals(accion)) {
 
-            List<Persona> listaPersonas = registrojdbc.listaPersonas(correo, contra);
+            List<Cliente> listaClientes = registrojdbc.listaClientes(correo, contra);
+            List<SuperAdministrador> listaSuperAdministradores = registrojdbc.listaSuperAdministradores(correo, contra);
+            List<Administrador> listaAdministradores = registrojdbc.listaAdministradores(correo, contra);
 
-            for (Persona iterador : listaPersonas) {
-                if (iterador instanceof Cliente) {
-                    Cliente cliente = (Cliente) iterador;
-                    System.out.println(cliente.getNombreCliente());
-                    if (cliente.getCorreoCliente().equals(correo) && cliente.getContraCliente().equals(contra)) {
+             for (Cliente iteradorCliente : listaClientes) {
+                if (iteradorCliente != null) {
+                    if (iteradorCliente.getCorreoCliente().equals(correo) && iteradorCliente.getContraCliente().equals(contra)) {
                         dispatcher = request.getRequestDispatcher("usuario.jsp");
                         break;
                     }
+                }
+            }
 
-                } else if (iterador instanceof SuperAdministrador) {
-                    SuperAdministrador superadmin = (SuperAdministrador) iterador;
-                    if (superadmin.getSuperAdminCorreo().equals(correo) && superadmin.getContraSuperAdmin().equals(contra)) {
-                        dispatcher = request.getRequestDispatcher("SuperAdministrador.jsp");
+            for (SuperAdministrador iteradorSuperAdministrador : listaSuperAdministradores) {
+                if (iteradorSuperAdministrador != null) {
+                    if (iteradorSuperAdministrador.getSuperAdminCorreo().equals(correo) && iteradorSuperAdministrador.getContraSuperAdmin().equals(contra)) {
+                        dispatcher = request.getRequestDispatcher("superAdmin.jsp");
                         break;
                     }
+                }
+            }
 
-                } else if (iterador instanceof Administrador) {
-                    Administrador admin = (Administrador) iterador;
-                    if (admin.getCorreoAdmin().equals(correo) && admin.getContraAdmin().equals(contra)) {
+            for (Administrador iteradorAdministrador : listaAdministradores) {
+                if (iteradorAdministrador != null) {
+                    if (iteradorAdministrador.getCorreoAdmin().equals(correo) && iteradorAdministrador.getContraAdmin().equals(contra)) {
                         dispatcher = request.getRequestDispatcher("admin.jsp");
                         break;
                     }
-                } else {
-                    dispatcher = request.getRequestDispatcher("IniciarSesion.jsp");
-                    break;
                 }
+            }
 
+            if (dispatcher == null) { 
+                noCuenta = "V";
+                session.setAttribute("noCuenta", noCuenta);
+                dispatcher = request.getRequestDispatcher("IniciarSesion.jsp");
             }
             dispatcher.forward(request, response);
         }
-
+         
     }
 
     @Override
@@ -79,8 +94,10 @@ public class RegistroController extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
+
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(RegistroController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RegistroController.class
+                    .getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -89,8 +106,10 @@ public class RegistroController extends HttpServlet {
             throws ServletException, IOException {
         try {
             processRequest(request, response);
+
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(RegistroController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(RegistroController.class
+                    .getName()).log(Level.SEVERE, null, ex);
         }
     }
 

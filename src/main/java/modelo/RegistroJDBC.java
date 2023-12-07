@@ -42,7 +42,7 @@ public class RegistroJDBC {
                 String nombreCliente = rs.getString("nombreCliente");
                 String correo = rs.getString("correo");
 
-                cliente = new Cliente(id, contra, statusLogin, fechaRegistrado, nombreCliente, correo);
+                cliente = new Cliente(id, statusLogin, fechaRegistrado, nombreCliente, correo, contra);
 
             }
             return cliente;
@@ -75,8 +75,8 @@ public class RegistroJDBC {
                 String fechaRegistrado = rs.getString("fechaRegistrado");
                 String superAdminNombre = rs.getString("superAdminNombre");
                 String superAdminCorreo = rs.getString("correoSuperAdmin");
-
-                superAdministrador = new SuperAdministrador(id, contra, statusLogin, fechaRegistrado, superAdminNombre, superAdminCorreo);
+                
+                superAdministrador = new SuperAdministrador(id, statusLogin, fechaRegistrado, superAdminNombre, superAdminCorreo, contra);
 
             }
             return superAdministrador;
@@ -110,7 +110,7 @@ public class RegistroJDBC {
                 String adminNombre = rs.getString("adminNombre");
                 String correoEmpresarial = rs.getString("correoEmpresarial");
 
-                administrador = new Administrador(id, contra, statusLogin, fechaRegistrado, adminNombre, correoEmpresarial);
+                administrador = new Administrador(id, statusLogin, fechaRegistrado, adminNombre, correoEmpresarial, contra);
 
             }
             return administrador;
@@ -120,17 +120,36 @@ public class RegistroJDBC {
         }
 
     }
-
-    public List<Persona> listaPersonas(String _correo, String _contra) {
+    
+    public List<Cliente> listaClientes(String _correo, String _contra) {
         
-            List<Persona> lista = new ArrayList<>();
+            List<Cliente> lista = new ArrayList<>();
 
             Cliente cliente = loginCliente(_correo, _contra);
-            SuperAdministrador superAdministrador = loginSuperAdmin(_correo, _contra);
-            Administrador administrador = loginAdmin(_correo, _contra);
-
+            
             lista.add(cliente);
+
+            return lista;
+    }
+    
+    public List<SuperAdministrador> listaSuperAdministradores(String _correo, String _contra) {
+        
+            List<SuperAdministrador> lista = new ArrayList<>();
+
+            SuperAdministrador superAdministrador = loginSuperAdmin(_correo, _contra);
+            
             lista.add(superAdministrador);
+
+            return lista;
+    }
+    
+
+    public List<Administrador> listaAdministradores(String _correo, String _contra) {
+        
+            List<Administrador> lista = new ArrayList<>();
+
+            Administrador administrador = loginAdmin(_correo, _contra);
+        
             lista.add(administrador);
 
             return lista;

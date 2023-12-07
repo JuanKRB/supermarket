@@ -126,7 +126,7 @@
             </div>
 
             <div class="lupa">
-                <a href="IniciarSesion.jsp" class="lupaA"><img src="./img/perfil.png" alt="alt" class=""/></a>
+                <a href="RegistroController?accion=irALogin" class="lupaA"><img src="./img/perfil.png" alt="alt" class=""/></a>
             </div>
 
         </header>
