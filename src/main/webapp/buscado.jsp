@@ -7,7 +7,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/buscar6.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buscar7.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="./css/producto10.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
@@ -86,7 +86,7 @@
         %>
         <div class="noEncontroDiv">
             <img src="img/caraTriste.png" alt=""/>
-            <h4>Lo sentimos no hay productos de los que busco</h4>
+            <h4>Lo sentimos, no tenemos ese producto</h4>
         </div>
         <%
 

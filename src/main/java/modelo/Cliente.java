@@ -4,14 +4,14 @@ package modelo;
 public class Cliente extends Persona {
     
     private String NombreCliente;
-    private String direccion;
     private String correoCliente;
+    private String contraCliente;
 
-    public Cliente(int id, int contra, String statusLogin, String fechaRegistrado, String NombreCliente, String direccion, String correoCliente) {
-        super(id, contra, statusLogin, fechaRegistrado);
+    public Cliente(int id, String statusLogin, String fechaRegistrado, String NombreCliente, String correoCliente, String contraCliente) {
+        super(id, statusLogin, fechaRegistrado);
         this.NombreCliente = NombreCliente;
-        this.direccion = direccion;
         this.correoCliente = correoCliente;
+        this.contraCliente = contraCliente;
     }
 
     public String getNombreCliente() {
@@ -22,14 +22,6 @@ public class Cliente extends Persona {
         this.NombreCliente = NombreCliente;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
     public String getCorreoCliente() {
         return correoCliente;
     }
@@ -37,6 +29,16 @@ public class Cliente extends Persona {
     public void setCorreoCliente(String correo) {
         this.correoCliente = correo;
     }
+
+    public String getContraCliente() {
+        return contraCliente;
+    }
+
+    public void setContraCliente(String contraCliente) {
+        this.contraCliente = contraCliente;
+    }
+    
+    
     
 
 }

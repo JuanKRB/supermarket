@@ -5,11 +5,13 @@ public class Administrador extends Persona{
     
     private String adminNombre;
     private String correoAdmin;
+    private String contraAdmin;
 
-    public Administrador(int id, int contra, String statusLogin, String fechaRegistrado, String adminNombre, String correoAdmin) {
-        super(id, contra, statusLogin, fechaRegistrado);
+    public Administrador(int id, String statusLogin, String fechaRegistrado, String adminNombre, String correoAdmin, String contraAdmin) {
+        super(id, statusLogin, fechaRegistrado);
         this.adminNombre = adminNombre;
         this.correoAdmin = correoAdmin;
+        this.contraAdmin = contraAdmin;
     }
 
     public String getAdminNombre() {
@@ -27,6 +29,15 @@ public class Administrador extends Persona{
     public void setCorreoAdmin(String correoAdmin) {
         this.correoAdmin = correoAdmin;
     }
+
+    public String getContraAdmin() {
+        return contraAdmin;
+    }
+
+    public void setContraAdmin(String contraAdmin) {
+        this.contraAdmin = contraAdmin;
+    }
+    
     
     
 }

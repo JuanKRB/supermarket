@@ -44,7 +44,7 @@
 
             <div class="contenedor__login-register">
                 <!--para el login-->
-                <form action="superAdmin.jsp" method="POST" class="formulario__login">
+                <form action="RegistroController?accion=login" method="POST" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
                     <input type="text" placeholder="email" name="email" required>
                     <input type="password" placeholder="password" name="password" required>
@@ -62,7 +62,7 @@
                 </form>
 
                 <!--para registrarse-->
-                <form action="LoginServlet" method="POST" class="formulario__register">
+                <form action="RegistroController?accion=registro" method="POST" class="formulario__register">
                     <h2>Regístrarse</h2>
 
                     <input type="text" placeholder="email" name="email" required>
