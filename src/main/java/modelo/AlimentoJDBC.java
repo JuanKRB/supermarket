@@ -7,7 +7,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JOptionPane;
 
 public class AlimentoJDBC {
 
@@ -27,7 +26,7 @@ public class AlimentoJDBC {
 
         try {
 
-            ps = conexion.prepareStatement("SELECT id_alimento, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimento FROM Alimentos");
+            ps = conexion.prepareStatement("SELECT id_alimento, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimento, id_categoria FROM Alimentos");
 
             rs = ps.executeQuery();
 
@@ -48,9 +47,10 @@ public class AlimentoJDBC {
                 String proteinas = rs.getString("proteinas");
                 String grasas = rs.getString("grasas");
                 String fechaCaducidad = rs.getString("fechaCaducidad");
-                String tipoDeAlimentos = rs.getString("tipoDeAlimento");            
-    
-                Alimento alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
+                String tipoDeAlimentos = rs.getString("tipoDeAlimento");
+                int id_categoria = rs.getInt("id_categoria");
+
+                Alimento alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, id_categoria, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
                 lista.add(alimento);
             }
             return lista;
@@ -61,7 +61,7 @@ public class AlimentoJDBC {
 
     }
 
-    public Producto mostarProducto(int _id) {
+   /* public Producto mostarProducto(int _id) {
 
         PreparedStatement ps;
         ResultSet rs;
@@ -93,7 +93,7 @@ public class AlimentoJDBC {
                 String fechaCaducidad = rs.getString("fechaCaducidad");
                 String tipoDeAlimentos = rs.getString("tipoDeAlimento");
 
-                alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
+                //alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
 
             }
             return alimento;
@@ -103,7 +103,7 @@ public class AlimentoJDBC {
         }
 
     }
-    
+
     public Producto buscarPorNombre(String _nombre) {
 
         PreparedStatement ps;
@@ -136,7 +136,7 @@ public class AlimentoJDBC {
                 String fechaCaducidad = rs.getString("fechaCaducidad");
                 String tipoDeAlimentos = rs.getString("tipoDeAlimento");
 
-                alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
+                //alimento = new Alimento(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, ingredientes, calorias, proteinas, grasas, fechaCaducidad, tipoDeAlimentos);
 
             }
             return alimento;
@@ -235,6 +235,11 @@ public class AlimentoJDBC {
             return false;
         }
 
-    }
-}
+    }*/
 
+  
+
+   
+    
+
+}

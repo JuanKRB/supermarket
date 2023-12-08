@@ -8,8 +8,8 @@ public class Electronico extends Producto{
     private String color;
     private String especificaciones;
 
-    public Electronico(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad, int peso, int altura, int ancho, String color, String especificaciones) {
-        super(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad);
+    public Electronico(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad, int id_categoria, int peso, int altura, int ancho, String color, String especificaciones) {
+        super(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, id_categoria);
         this.peso = peso;
         this.altura = altura;
         this.ancho = ancho;

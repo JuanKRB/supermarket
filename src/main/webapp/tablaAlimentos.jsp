@@ -37,7 +37,7 @@
             if (mostrarFormulario != null && mostrarFormulario) {
         %>
         <!-- Tu formulario aquí -->
-        <form action="FormularioAgregar" method="post">
+        <form action="AlimentosController?action=agregar" method="post">
             <label for="id">ID:</label>
             <input type="text" name="id" id="id">
             <br>

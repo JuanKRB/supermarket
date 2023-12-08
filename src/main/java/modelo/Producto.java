@@ -13,8 +13,9 @@ abstract public class Producto {
     private int id_proveedor;
     private int id_marca;
     private String disponibilidad;
-
-    public Producto(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad) {
+    private int id_categoria;
+  
+    public Producto(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad, int id_categoria) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -25,6 +26,7 @@ abstract public class Producto {
         this.id_proveedor = id_proveedor;
         this.id_marca = id_marca;
         this.disponibilidad = disponibilidad;
+        this.id_categoria = id_categoria;
     }
 
     public int getId() {
@@ -106,6 +108,17 @@ abstract public class Producto {
     public void setDisponibilidad(String disponibilidad) {
         this.disponibilidad = disponibilidad;
     }
+
+    public int getId_categoria() {
+        return id_categoria;
+    }
+
+    public void setId_categoria(int id_categoria) {
+        this.id_categoria = id_categoria;
+    }
+
+    
+
     
     
     

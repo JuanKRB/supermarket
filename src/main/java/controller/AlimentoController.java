@@ -105,18 +105,37 @@ public class AlimentoController extends HttpServlet {
             
             String nombre = request.getParameter("nombre");
 
-            alimentoJDBC.buscarPorNombre(nombre);
+            //alimentoJDBC.buscarPorNombre(nombre);
             dispatcher = request.getRequestDispatcher("buscado.jsp");
             List<Alimento> listaAlimentos = alimentoJDBC.listaAlimentos();
             request.setAttribute("lista", listaAlimentos);
             request.setAttribute("nombre", nombre);
             
-        } else {
+        } else if("categoriaAlimento".equals(accion)) {
+            dispatcher = request.getRequestDispatcher("Alimentos.jsp");
+            List<Alimento> listaAlimentos = alimentoJDBC.listaAlimentos();
+            request.setAttribute("lista", listaAlimentos);
+            
+        } else if("categoriaCarne".equals(accion)) {
+            dispatcher = request.getRequestDispatcher("Carnes.jsp");
+            List<Alimento> listaAlimentos = alimentoJDBC.listaAlimentos();
+            request.setAttribute("lista", listaAlimentos);
+
+       }else if("categoriaFrutas".equals(accion)) {
+            dispatcher = request.getRequestDispatcher("Frutas.jsp");
+            List<Alimento> listaAlimentos = alimentoJDBC.listaAlimentos();
+            request.setAttribute("lista", listaAlimentos);
+
+       } else {
             dispatcher = request.getRequestDispatcher("productos.jsp");
             List<Alimento> listaAlimentos = alimentoJDBC.listaAlimentos();
             request.setAttribute("lista", listaAlimentos);
         }
 
+        if (dispatcher == null) { 
+           dispatcher = request.getRequestDispatcher("Inicio.jsp");
+       }
+        
         dispatcher.forward(request, response);
         
     }

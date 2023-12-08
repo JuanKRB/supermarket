@@ -139,21 +139,24 @@
         <div class="categorias-principal">
 
             <div class="categorias-1">
-                <a href="Alimentos.jsp">
+              
+                <a href="AlimentoController?accion=categoriaAlimento" >
                     <div class="categoria2">
                         <img src="img-categorias/alimentos.svg" alt="Descripción del SVG">
                         <hr>
                         <h2 id="alimentos">Alimentos</h2>
-                    </div>
+                        
+                    </div>     
                 </a>
-                <a href="Carnes.jsp">
+      
+                <a href="AlimentoController?accion=categoriaCarne">
                     <div class="categoria2">
                         <img src="img-categorias/carnes.svg" alt="Descripción del SVG">
                         <hr>
                         <h2 id="carnes">Carnes</h2>
                     </div>
                 </a>
-                <a href="Frutas.jsp">
+                <a href="AlimentoController?accion=categoriaFrutas">
                 <div class="categoria2">
                     <img src="img-categorias/frutas.svg" alt="Descripción del SVG">
                     <hr>
