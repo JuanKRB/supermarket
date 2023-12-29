@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
- */
+
 package controller;
 
 import jakarta.servlet.RequestDispatcher;
@@ -18,10 +15,6 @@ import java.util.List;
 
 
 
-/**
- *
- * @author Carlos Oviedo
- */
 @WebServlet(name = "FormularioAgregar", urlPatterns = {"/FormularioAgregar"})
 public class FormularioAgregar extends HttpServlet {
 

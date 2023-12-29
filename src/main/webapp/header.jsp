@@ -35,7 +35,7 @@
                         <li class="dropdown__list">
                             <a href="#" class="dropdown__link">
                                 <img src="./icons/comida-dietetica.png" alt="Alimentos" class="nav__icon">
-                                <span class="dropdown__span">Alimentos</span>
+                                <span class="dropdown__span">Categorias</span>
                                 <img src="./icons/flecha-hacia-abajo (5).png" alt="Desplegar" class="dropdown__arrow">
                                 <input type="checkbox" class="dropdown__check">
                             </a>
@@ -43,61 +43,27 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__sub">
                                     <li class="dropdown__li">
-                                        <a href="Alimentos.jsp" class="dropdown__anchor">Galletas</a>
+                                        <a href="AlimentoController?accion=categoriaAlimento" class="dropdown__anchor">Alimentos</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Salsas</a>
+                                        <a href="ProductoController?accion=irCarnes" class="dropdown__anchor">Carnes</a>
                                     </li>
                                     <li class="dropdown__li">
-                                        <a href="Alimentos.jsp"" class="dropdown__anchor">Cafe</a>
+                                        <a href="ProductoController?accion=categoriaFrutas" class="dropdown__anchor">Frutas</a>
+                                    </li>
+                                    <li class="dropdown__li">
+                                        <a href="ProductoController?accion=categoriaElectronicos" class="dropdown__anchor">Electronicos</a>
+                                    </li>
+                                    <li class="dropdown__li">
+                                        <a href="ProductoController?accion=categoriaGalletas" class="dropdown__anchor">Galletas</a>
+                                    </li>
+                                    <li class="dropdown__li">
+                                        <a href="ProductoController?accion=categoriaBebidas" class="dropdown__anchor">bebidas</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="dropdown__list">
-                            <a href="#" class="dropdown__link">
-                                <img src="./icons/electrodomestico.png" alt="Electrodomesticos" class="nav__icon">
-                                <span class="dropdown__span">Electrodomesticos</span>
-                                <img src="./icons/flecha-hacia-abajo (5).png" alt="Desplegar" class="dropdown__arrow">
-                                <input type="checkbox" class="dropdown__check">
-                            </a>
-
-                            <div class="dropdown__content">
-                                <ul class="dropdown__sub">
-                                    <li class="dropdown__li">
-                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Celulares</a>
-                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Televisores</a>
-                                    </li>
-                                    <li class="dropdown__li">
-                                        <a href="Electrodomesticos.jsp" class="dropdown__anchor">Perifericos</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                          <li class="dropdown__list">
-                            <a href="#" class="dropdown__link">
-                                <img src="./icons/liquido-de-limpieza.png" alt="Alimentos" class="nav__icon">
-                                <span class="dropdown__span">Limpieza</span>
-                                <img src="./icons/flecha-hacia-abajo (5).png" alt="Desplegar" class="dropdown__arrow">
-                                <input type="checkbox" class="dropdown__check">
-                            </a>
-
-                            <div class="dropdown__content">
-                                <ul class="dropdown__sub">
-                                    <li class="dropdown__li">
-                                        <a href="Limpieza.jsp" class="dropdown__anchor">Jabones</a>
-                                    </li>
-                                    <li class="dropdown__li">
-                                        <a href="Limpieza.jsp" class="dropdown__anchor">Detergentes</a>
-                                    </li>
-                                    <li class="dropdown__li">
-                                        <a href="Limpieza.jsp" class="dropdown__anchor">Bolsas</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
 
                     </ul>
                 </div>
@@ -107,8 +73,8 @@
             <nav>
                 <div class="a-nav">
                     <a href="Inicio.jsp" class="inicio">Inicio</a>
-                    <a href="AlimentoController">Productos</a>
-                    <a href="IniciarSesion.jsp" class="inicisesion">Iniciar Sesion</a>     
+                    <a href="ProductoController">Productos</a>
+                    <a href="RegistroController?accion=verificarSesionApagina" class="inicisesion">Iniciar Sesion</a>       
                 </div>
 
             </nav>
@@ -118,11 +84,11 @@
             </div>
 
             <div class="lupa">
-                <a href="AlimentoController?accion=mostraBuscarPagina" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
+                <a href="ProductoController?accion=mostraBuscarPagina" class="lupaA"><img src="./img/lupa.png" alt="alt" class=""/></a>
             </div>
 
             <div class="lupa">
-                <a href="IniciarSesion.jsp" class="lupaA"><img src="./img/perfil.png" alt="alt" class=""/></a>
+                <a href="RegistroController?accion=verificarSesionApagina" class="lupaA"><img src="./img/perfil.png" alt="alt" class=""/></a>
             </div>
 
         </header>

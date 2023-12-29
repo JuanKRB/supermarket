@@ -1,6 +1,10 @@
 
 package modelo;
 
+import java.io.InputStream;
+import java.sql.Blob;
+
+
 abstract public class Producto {
     
     private int id;
@@ -8,26 +12,41 @@ abstract public class Producto {
     private String descripcion;
     private Double precio;
     private int cantidad;
-    private String fechaRecibido;
-    private int id_sucursal;
-    private int id_proveedor;
     private int id_marca;
     private String disponibilidad;
     private int id_categoria;
-  
-    public Producto(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad, int id_categoria) {
+    private int id_subCategoria;
+    private String imagen;
+
+    public Producto() {
+    }
+   
+    public Producto(int id, String nombre, String descripcion, Double precio, int cantidad, int id_marca, String disponibilidad, int id_categoria, int id_subCategoria, String imagen) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.cantidad = cantidad;
-        this.fechaRecibido = fechaRecibido;
-        this.id_sucursal = id_sucursal;
-        this.id_proveedor = id_proveedor;
         this.id_marca = id_marca;
         this.disponibilidad = disponibilidad;
         this.id_categoria = id_categoria;
+        this.id_subCategoria = id_subCategoria;
+        this.imagen = imagen;
     }
+
+    public Producto(int id, String nombre, String descripcion, Double precio, int cantidad, int id_marca, String disponibilidad, int id_categoria, int id_subCategoria) {
+        this.id = id;
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.precio = precio;
+        this.cantidad = cantidad;
+        this.id_marca = id_marca;
+        this.disponibilidad = disponibilidad;
+        this.id_categoria = id_categoria;
+        this.id_subCategoria = id_subCategoria;
+    }
+    
+    
 
     public int getId() {
         return id;
@@ -69,30 +88,6 @@ abstract public class Producto {
         this.cantidad = cantidad;
     }
 
-    public String getFechaRecibido() {
-        return fechaRecibido;
-    }
-
-    public void setFechaRecibido(String fechaRecibido) {
-        this.fechaRecibido = fechaRecibido;
-    }
-
-    public int getId_sucursal() {
-        return id_sucursal;
-    }
-
-    public void setId_sucursal(int id_sucursal) {
-        this.id_sucursal = id_sucursal;
-    }
-
-    public int getId_proveedor() {
-        return id_proveedor;
-    }
-
-    public void setId_proveedor(int id_proveedor) {
-        this.id_proveedor = id_proveedor;
-    }
-
     public int getId_marca() {
         return id_marca;
     }
@@ -117,10 +112,25 @@ abstract public class Producto {
         this.id_categoria = id_categoria;
     }
 
-    
+    public int getId_subCategoria() {
+        return id_subCategoria;
+    }
+
+    public void setId_subCategoria(int id_subCategoria) {
+        this.id_subCategoria = id_subCategoria;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
+
 
     
-    
-    
+
+  
 }
 

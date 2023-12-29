@@ -33,7 +33,7 @@
         <div class="productoDiv">
 
             <a href="informacionProducto.jsp">
-                <img src="" alt="Imagen del producto" class="img-producto"/>
+                <img src="<%=alimIT.getImagen()%>" alt="<%=alimIT.getImagen()%>" class="img-producto"/>
                 <div class="disponibilidad">
                     <%
                       String disponiblidad = alimIT.getDisponibilidad();

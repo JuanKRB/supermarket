@@ -67,10 +67,9 @@
                 <form action="RegistroController?accion=registro" method="POST" class="formulario__register">
                     <h2>Regístrarse</h2>
 
-                    <input type="text" placeholder="email" name="email" required>
-                    <input type="password" placeholder="password" name="password" required>
-                   
-
+                    <input type="text" placeholder="Correo" name="correoRegistro" required>
+                    <input type="password" placeholder="Contraseña" name="contraRegistro" required>
+                    <input type="text" placeholder="Nombre" name="nombreRegistro" required>
 
                     <div>
                         <% 

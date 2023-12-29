@@ -1,21 +1,33 @@
 
 package modelo;
 
+
+
+
 public class Alimento extends ProductoConsumible{
     
-    private String tipoDeAlimento;
+    private String calorias;
 
-    public Alimento(int id, String nombre, String descripcion, Double precio, int cantidad, String fechaRecibido, int id_sucursal, int id_proveedor, int id_marca, String disponibilidad, int id_categoria, String ingredientes, String calorias, String proteinas, String grasas, String fechaCaducidad, String tipoDeAlimento) {
-        super(id, nombre, descripcion, precio, cantidad, fechaRecibido, id_sucursal, id_proveedor, id_marca, disponibilidad, id_categoria, ingredientes, calorias, proteinas, grasas, fechaCaducidad);
-        this.tipoDeAlimento = tipoDeAlimento;
+    public Alimento(int id, String nombre, String descripcion, Double precio, int cantidad, int id_marca, String disponibilidad, int id_categoria, int id_subCategoria, String imagen, String ingredientes, String calorias) {
+        super(id, nombre, descripcion, precio, cantidad, id_marca, disponibilidad, id_categoria, id_subCategoria, imagen, ingredientes);
+        this.calorias = calorias;
     }
 
-    public String getTipoDeAlimento() {
-        return tipoDeAlimento;
+    
+    
+    public Alimento() {
+      
     }
 
-    public void setTipoDeAlimento(String tipoDeAlimento) {
-        this.tipoDeAlimento = tipoDeAlimento;
+    public String getCalorias() {
+        return calorias;
     }
+
+    public void setCalorias(String calorias) {
+        this.calorias = calorias;
+    }
+    
+    
+
        
 }

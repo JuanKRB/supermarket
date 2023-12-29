@@ -7,8 +7,8 @@ public class SuperAdministrador extends Persona{
     private String superAdminCorreo;
     private String contraSuperAdmin;
 
-    public SuperAdministrador(int id, String statusLogin, String fechaRegistrado, String superAdminNombre, String superAdminCorreo, String contraSuperAdmin) {
-        super(id, statusLogin, fechaRegistrado);
+    public SuperAdministrador(int id, String statusLogin, String superAdminNombre, String superAdminCorreo, String contraSuperAdmin) {
+        super(id, statusLogin);
         this.superAdminNombre = superAdminNombre;
         this.superAdminCorreo = superAdminCorreo;
         this.contraSuperAdmin = contraSuperAdmin;

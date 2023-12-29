@@ -1,7 +1,9 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import="java.util.List" %>
+<%@page import="java.util.List"%>
+<%@page import="modelo.Bebida"%>
+<%@page import="modelo.Electronico"%>
 <%@page import="modelo.Alimento"%>
 <!DOCTYPE html>
 <html>
@@ -21,22 +23,26 @@
 
         <% 
 
-        List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("lista"); 
-
-         for( Alimento alimIT : listaAlimentos) {
+            List<Alimento> listaAlimentos = (List<Alimento>) request.getAttribute("listaAlimentos"); 
             
-            if(alimIT.getId_categoria() == 2) {
+           
+            
+            for( Alimento aliIT : listaAlimentos) {
+            
+             System.out.println("4444444447" +aliIT.getId_subCategoria());
+            
+              if(aliIT.getId_subCategoria() == 1) {
+           
 
         %>
 
-
         <div class="productoDiv">
 
-            <a href="informacionProducto.jsp">
-                <img src="" alt="Imagen del producto" class="img-producto"/>
+            <a href="MostrarController?accion=mostrarAlimento&id=<%=aliIT.getId()%>">
+                <img src="<%=aliIT.getImagen()%>" alt="<%=aliIT.getImagen()%>" class="img-producto"/>
                 <div class="disponibilidad">
                     <%
-                      String disponiblidad = alimIT.getDisponibilidad();
+                      String disponiblidad = aliIT.getDisponibilidad();
                       
                       if(disponiblidad.equals("V")){
                     %>
@@ -55,21 +61,40 @@
 
                 <div class="informacion">
 
-                    <h4 class="precio">₡<%= alimIT.getPrecio() %></h4>
-                    <p class="nombre"><%= alimIT.getNombre() %></p>
+                    <h4 class="precio">₡<%= aliIT.getPrecio() %></h4>
+                    <p class="nombre"><%= aliIT.getNombre() %></p>
                 </div>
             </a>
-
-            <form action="carritoServlet" method="POST">           
+                
+                
+              <%
+                       disponiblidad = aliIT.getDisponibilidad();
+                      
+                      if(disponiblidad.equals("V")){
+             %>
+            <form action="CarritoController?accion=agregarAcarritoAlimento&id=<%= aliIT.getId() %>" method="POST">          
                 <button type="submit" class="boton-agregar">+ Agregar</button>
             </form>
+                
+                <%
+                   }else{
+              %>
+              <form action="" method="POST">          
+                <button type="submit" class="boton-agregar">+ Agregar</button>
+            </form>
+                <%           
+                   }              
+                    %>
 
         </div>
-        <%           
-           }              
-        %>
 
-        <% } %>        
+        <% }
+
+      }%>   
+
+        
+
+      
 
 
         <div class="cambioPaginas">

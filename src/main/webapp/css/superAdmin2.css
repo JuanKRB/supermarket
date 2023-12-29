@@ -1,0 +1,195 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+}
+
+main{
+    display: flex;
+}
+
+.informacion-usuario{
+
+    width: 440px;
+    height: 540px;
+    margin-top: 0px;
+    /*margin-left: 27px;*/
+
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario {
+
+    width: 440px;
+    height: 540px;
+    margin-top: 30px;
+    /*margin-left: 27px;*/
+
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario img{
+
+    width: 240px;
+    height: 240px;
+    margin-left: 109px;
+    margin-top: 25px;
+
+}
+
+.informacion-usuario h4 {
+
+    margin-left: 175px;
+    font-size: 26px;
+
+}
+
+.extras{
+
+    display: block;
+}
+
+.configuracionProductos{
+    display: block;
+
+    width: 440px;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    display: inline-block;
+    color: black;
+
+}
+
+.h4{
+    display: inline-block;
+
+    width: 360px;
+    height: 40px;
+    top: 10px;
+    margin-bottom: 13px;
+}
+
+.configuracionProductos img{
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: 18px;
+    margin-left: 34px;
+    margin-right: 4px;
+
+}
+
+.configuracionProductos h4{
+
+    display: inline-block;
+    font-size: 26px;
+
+}
+
+.configuracionUsuarios{
+
+    width: 440px;
+    height: 110px;
+    margin-top: 35px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    color: black;
+
+
+}
+
+.configuracionUsuarios img{
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: 18px;
+    margin-left: 34px;
+    margin-right: 4px;
+
+}
+
+.configuracionUsuarios h4{
+
+    display: inline-block;
+    font-size: 26px;
+    border: none;
+
+}
+
+.configuracionCuenta{
+
+    width: 440px;
+    height: 103px;
+    margin-top: 40px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    color: black;
+
+}
+
+
+.configuracionCuenta img{
+
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-top: 18px;
+    margin-left: 35px;
+    margin-right: 4px;
+
+}
+
+.configuracionCuenta h4{
+
+    display: inline-block;
+    font-size: 26px;
+
+}
+
+#aCerrarSesion{
+    text-decoration: none;
+}
+
+.div-cerrarSesion {
+    display: flex;
+    align-items: center; 
+    background-color: #F1F1F1;
+    width: 245px;
+    height: 50px;
+    border-radius: 12px;
+    margin-left: 102px;
+    margin-top: 130px;
+    color: black;
+    
+}
+
+.div-cerrarSesion img{
+    margin-left: 10px;
+}
+
+.div-cerrarSesion h4{
+    margin-left: 20px;
+    font-size: 25px;
+} 
+
+#CerrarSesionIcono{
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 2px;
+}
+
+

@@ -7,8 +7,8 @@ public class Cliente extends Persona {
     private String correoCliente;
     private String contraCliente;
 
-    public Cliente(int id, String statusLogin, String fechaRegistrado, String NombreCliente, String correoCliente, String contraCliente) {
-        super(id, statusLogin, fechaRegistrado);
+    public Cliente(int id, String statusLogin,String NombreCliente, String correoCliente, String contraCliente) {
+        super(id, statusLogin);
         this.NombreCliente = NombreCliente;
         this.correoCliente = correoCliente;
         this.contraCliente = contraCliente;
@@ -26,7 +26,7 @@ public class Cliente extends Persona {
         return correoCliente;
     }
 
-    public void setCorreoCliente(String correo) {
+    public void getNombreCliente(String correo) {
         this.correoCliente = correo;
     }
 

@@ -5,12 +5,10 @@ package modelo;
     
     private int id;
     private String statusLogin;
-    private String fechaRegistrado;
 
-    public Persona(int id, String statusLogin, String fechaRegistrado) {
+    public Persona(int id, String statusLogin ) {
         this.id = id;
         this.statusLogin = statusLogin;
-        this.fechaRegistrado = fechaRegistrado;
     }
 
     public int getId() {
@@ -29,13 +27,6 @@ package modelo;
         this.statusLogin = statusLogin;
     }
 
-    public String getFechaRegistrado() {
-        return fechaRegistrado;
-    }
-
-    public void setFechaRegistrado(String fechaRegistrado) {
-        this.fechaRegistrado = fechaRegistrado;
-    }
     
     
     

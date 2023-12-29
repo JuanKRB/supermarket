@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+}
+
+main{
+    display: flex;
+}
+
+.informacion-usuario{
+
+    width: 440px;
+    height: 540px;
+    margin-top: 90px;
+    /*margin-left: 27px;*/
+
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario {
+
+    width: 440px;
+    height: 540px;
+    margin-top: 30px;
+    /*margin-left: 27px;*/
+
+    margin-left: 300px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.informacion-usuario h4{
+
+
+
+    margin-left: 176px;
+    font-size: 20px;
+
+}
+
+.informacion-usuario img{
+
+    width: 240px;
+    height: 240px;
+    margin-left: 102px;
+    margin-top: 25px;
+
+}
+
+.extras{
+    display: inline-block;
+}
+
+.img-info{
+    display: flex;
+    height: 70px;
+}
+
+.tarjetas{
+    display: inline-block;
+
+    width: 440px;
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.tarjetas a{
+    font-size: 14px;
+    color: black;
+    margin-left: 297px;
+    text-decoration: none;
+}
+
+.tarjetas hr{
+    margin-top: 10px;
+}
+
+.img-tarjeta{
+
+    display: block;
+    margin-left: 20px;
+}
+
+#codigo{
+    margin-left: 80px;
+}
+
+.infoTarjeta{
+    display: block;
+    margin-left: 25px;
+
+    width: 300px;
+}
+.div1{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.div1 h4{
+    margin-left: 24px;
+    height: 3px;
+}
+
+.div2{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.div2 h4{
+    margin-left: 24px;
+    height: 3px;
+}
+
+.infoTarjeta h4{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.tarjetas img{
+
+    width: 80px;
+    height: 80px;
+}
+
+
+.facturas{
+
+    width: 440px;
+    height: 110px;
+    margin-top: 35px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.facturas img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 14px;
+    margin-bottom: 40px;
+}
+
+.facturas h4{
+    display: inline-block;
+    font-size: 15px;
+}
+
+.facturas a{
+    font-size: 14px;
+    color: black;
+    margin-left: 297px;
+    text-decoration: none;
+}
+
+.img-info-tarjeta{
+    display: flex;
+    height: 80px;
+}
+
+.div4{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    display: inline-block;
+    margin-bottom: 315px;
+    background-color: red;
+}
+
+.direcciones{
+
+    width: 440px;
+    height: 110px;
+    margin-top: 34px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+}
+
+.direcciones img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 14px;
+}
+
+.img-info-dirreciones{
+    display: flex;
+    height: 80px;
+}
+
+.direcciones a{
+    font-size: 14px;
+    color: black;
+    margin-left: 272px;
+    text-decoration: none;
+}
+
+.div10{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.div10 h4{
+    margin-left: 15px;
+}
+
+#ciudad{
+    margin-left: 74px;
+    height: 3px;
+}
+
+.div11{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.div11 h4{
+    margin-left: 5px;
+    height: 3px;
+}
+
+#direccion-excata{
+    margin-left: 35px;
+  
+}
+
+.configuracionCuenta{
+   display: inline-block;
+    width: 440px;
+    height: 110px;
+    margin-top: 34px;
+    margin-left: 70px;
+    border-radius: 12px;
+    background-color: #FDFEFE;
+    color: black;
+}
+
+.configuracionCuenta img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.img-info-configuracionCuenta{
+    display: flex;
+    height: 85px;
+    margin-top: 2px;
+}
+
+.configuracionCuenta-div1{
+    display: inline-block;
+}
+
+
+.configuracionCuenta-div2{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 25px;
+    
+}
+
+
+#aCerrarSesion{
+    text-decoration: none;
+}
+
+.div-cerrarSesion {
+    display: flex;
+    align-items: center; 
+    background-color: #F1F1F1;
+    width: 245px;
+    height: 50px;
+    border-radius: 12px;
+    margin-left: 102px;
+    margin-top: 130px;
+    color: black;
+    
+}
+
+.div-cerrarSesion img{
+    margin-left: 10px;
+}
+
+.div-cerrarSesion h4{
+    margin-left: 20px;
+    font-size: 25px;
+} 
+
+#CerrarSesionIcono{
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 2px;
+}
+
+
+

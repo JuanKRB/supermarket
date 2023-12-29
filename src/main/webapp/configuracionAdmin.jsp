@@ -8,16 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Supermercado</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/admin3.css">
+        <link rel="stylesheet" href="./css/admin4.css">
         <link rel="stylesheet" href="./css/configuracionAdmin2.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
         <title>Supermercado</title>
     </head>
     <body>
-        <div class="botonAtras">
-            <a href="admin.jsp" ><img src="img/atras.png" alt=""/></a>
-        </div><br>
+        <br><br><br>
         <main>
 
             <div class="informacion-usuario">
@@ -50,14 +48,14 @@
                             <div class="form-group row">
                                 <label for="usuario" class="col-4">Usuario:</label>
                                 <div class="col-8">
-                                    <input type="text" class="form-control" value="marco antonio">
+                                    <input type="text" class="form-control" value="">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="email" class="col-4">Correo:</label>
                                 <div class="col-8">
-                                    <input type="email" class="form-control" value="marco@centroPInf.com">
+                                    <input type="email" class="form-control" value="">
                                 </div>
                             </div>
 
