@@ -57,6 +57,37 @@ public class UsuarioJDBC {
         }
         return usuario;
     }
+       
+    public List<Cliente> listaClientesTradu() {
+
+        PreparedStatement ps;
+        ResultSet rs;
+        List<Cliente> lista = new ArrayList<>();
+
+        try {
+
+            ps = conexion.prepareStatement("SELECT * FROM cliente");
+
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+
+                int id = rs.getInt("id_cliente");
+                String contra = rs.getString("contra");
+                String statusLogin = rs.getString("statusLogin");
+                String nombreCliente = rs.getString("nombreCliente");
+                String correo = rs.getString("correo");
+                
+                Cliente cliente = new Cliente(id, statusLogin, nombreCliente,correo,contra);
+                lista.add(cliente);
+            }
+            return lista;
+        } catch (SQLException e) {
+            System.out.println("Error lista clientes: " + e.getMessage());
+            return null;
+        }
+
+    }
 
     private Usuario2 establecerLibro(ResultSet rs) {
         Usuario2 usuario = new Usuario2();
